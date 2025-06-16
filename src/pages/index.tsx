@@ -17,11 +17,15 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="">
+          Start with us a journey to create a Rust+Microkernel (Redox based) mobile operating system, 
+          for single device experience with distributed and virtual ressources in a common open source eco system on Risc-V architecture. 
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Vision
           </Link>
         </div>
       </div>
@@ -29,12 +33,13 @@ function HomepageHeader() {
   );
 }
 
+
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Single Device experience mobile operating system <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
