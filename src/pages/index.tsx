@@ -28,6 +28,8 @@ function HomepageHeader() {
             Vision
           </Link>
         </div>
+        <div className='hero-img'></div>
+         {/* <img src="img/devices.png" alt="Devices" className='hero-img' />  */}
       </div>
     </header>
   );

@@ -114,3 +114,10 @@
 .layout {
   padding: 0 1rem;
 }
+
+.hero-img {
+  position: relative;
+  bottom: -2rem;
+  width: 40vw;
+  padding-top: 2rem;
+}
