@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'RISC-V & Rust-Powered',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/risc-rust.svg').default,
     description: (
       <>
         A modern microkernel operating system in <a href="https://www.rust-lang.org">Rust</a> - 
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: '100% open source',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/foundation.svg').default,
     description: (
       <>
         Transparency right from the start: Our code is <a href='https://www.apache.org/licenses/LICENSE-2.0.html'>Apache 2.0-licensed</a> and community-driven.
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Real Open Source Android Alternative',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/open-nexus.svg').default,
     description: (
       <>
         A sovereign OS alternative to <a href='https://www.android.com'>Google/Android</a>, with a focus on privacy & control.
@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Developer-First-Design',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/bounty.svg').default,
     description: (
       <>
         With clear APIs, modular architecture and upcoming bounty program for contributions
@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Industry-ready & scalable',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/chip.svg').default,
     description: (
       <>
         From smartphones to embedded: Our OS runs on minimal and powerful hardware.
@@ -58,7 +58,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Community & Promotion',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/rocket.svg').default,
     description: (
       <>
         Initiatives and open source enthusiasts - be part of the mission!

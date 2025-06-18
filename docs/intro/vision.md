@@ -32,10 +32,12 @@ Today's computing experience is fragmented across:
 
 ### For Industry
 
+**Administration of all devices** - not just Desktops. From Tablets, Smart watches to EVs. Because you can also receive company documents on all devices.
+
 | Advantage         | Impact |
 |------------------|----------------|
 | 60% lower R&D    | One codebase for all product lines |
 | Future-proof     | RISC-V architecture ensures longevity |
 | Regulatory-ready | Built-in GDPR/cybersecurity compliance |
 
-[→ Explore the Architecture](/docs/architecture)
+[→ Explore the Architecture](/docs/contributing/development/architecture)

@@ -13,7 +13,8 @@ Today's devices force us into walled gardens:
 
 - **Smartphones ≠ Desktops**: Different OSes, disjointed workflows
 - **Cloud-Dependent**: Your "ecosystem" relies on third-party sync
-- **Hardware Silos**: A smartwatch OS can't adapt to a tablet
+- **Hardware Silos**: A Desktop App can't adapt to a Tablet
+- **Proprietary Eco Systems**: Forces everyone to develop their own
 
 **This isn't just inconvenient - it's a fundamental design flaw.**
 
@@ -25,8 +26,8 @@ Introducing **open nexus**: A Rust-based microkernel OS designed for **adaptive 
 
 ✅ **Single Codebase**  
 
-- From wearables to workstations - same OS, tailored UI  
-- No more redeveloping apps for architectures
+- From wearables to workstations - same OS, tailored UI, adaptable microkernel
+- No more redeveloping apps for different architectures
 
 ✅ **Hardware-Agnostic**  
 
@@ -77,4 +78,4 @@ We're pioneering what others can't - because we're:
 
 **Let's build the OS the industry said was impossible.**  
 
-[Discuss on Matrix](https://matrix.to/#/your-room)
+[Discuss on Matrix (soon)](https://matrix.to/#/your-room)

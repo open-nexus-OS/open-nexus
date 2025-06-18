@@ -12,7 +12,7 @@ sidebar_position: 2
 
 ## Quick Start  
 
-1. Fork our [GitHub repo](https://github.com/open-nexus-OS).  
+1. Clone our [GitHub repo](https://github.com/open-nexus-OS).  
 2. Pick a `good-first-issue` from the tracker.  (upcoming soon)
 3. Submit a PR – we mentor newcomers!  
 
