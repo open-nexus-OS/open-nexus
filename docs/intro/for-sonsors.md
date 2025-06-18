@@ -17,4 +17,4 @@ sidebar_position: 3
 - **Early access** to compliant hardware stacks.  
 - **Brand visibility** as a core supporter.  
 
-[→ Download Sponsor Deck (PDF)](/sponsor-pack.pdf)
+[→ Download Sponsor Deck (PDF)](/files/open-nexus_pitch.pdf)
