@@ -51,7 +51,7 @@ We're pioneering what others can't - because we're:
 **Join the Core Team:**  
 
 1. Contribute to our [GitHub](https://github.com/open-nexus-OS) (we mentor!)  
-2. Earn bounties for [priority issues](/docs/timeline)  (upcoming soon)
+2. Earn bounties for [priority issues](/docs/intro/timeline)  (upcoming soon)
 3. Help define the **adaptive UI standard**  
 
 [→ Start Developing](/docs/contributing)  
