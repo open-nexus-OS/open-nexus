@@ -40,7 +40,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Developer-First-Design',
-    Svg: require('@site/static/img/bounty.svg').default,
+    Svg: require('@site/static/img/bug-slash-solid.svg').default,
     description: (
       <>
         With clear APIs, modular architecture and upcoming bounty program for contributions
@@ -58,7 +58,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Community & Promotion',
-    Svg: require('@site/static/img/rocket.svg').default,
+    Svg: require('@site/static/img/shuttle-space-solid.svg').default,
     description: (
       <>
         Initiatives and open source enthusiasts - be part of the mission!
