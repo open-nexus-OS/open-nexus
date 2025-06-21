@@ -1,10 +1,9 @@
 ---
+slug: "breaking-ecosystem-barriers"
 title: "Breaking Ecosystem Barriers: The First Truly Unified OS"
 subtitle: "Building an open, adaptable OS for seamless single-device experiences"
-author: Jenning Schäfer
-author_title: Founder
-author_url: https://github.com/jenningschaefer
-author_image_url: https://github.com/jenningschaefer.png
+authors: [jenning]
+tags: [vision]
 ---
 
 ## The Problem: Locked Ecosystems Limit Innovation
@@ -21,6 +20,8 @@ Today's devices force us into walled gardens:
 ## Our Vision: One OS, Any Device
 
 Introducing **open nexus**: A Rust-based microkernel OS designed for **adaptive computing**.
+
+<!-- truncate -->
 
 ### What Makes This Possible?
 
