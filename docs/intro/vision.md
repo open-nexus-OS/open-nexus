@@ -40,4 +40,6 @@ Today's computing experience is fragmented across:
 | Future-proof     | RISC-V architecture ensures longevity |
 | Regulatory-ready | Built-in GDPR/cybersecurity compliance |
 
-[→ Explore the Architecture](/docs/contributing/development/architecture)
+[→ Download Whitepaper (PDF english)](/files/whitepaper_en.pdf)
+
+[→ Download Whitepaper (PDF deutsch)](/files/whitepaper_de.pdf)
