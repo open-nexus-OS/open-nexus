@@ -79,4 +79,4 @@ We're pioneering what others can't - because we're:
 
 **Let's build the OS the industry said was impossible.**  
 
-[Discuss on Matrix (soon)](https://matrix.to/#/your-room)
+[Discuss on Discord (soon)](https://matrix.to/#/your-room)
