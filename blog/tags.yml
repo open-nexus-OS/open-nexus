@@ -2,6 +2,10 @@ vision:
   label: Vision
   description: Vision of our OS
 
+general:
+  label: General
+  description: General Announcements
+
 git:
   label: Github
   permalink: https://github.com/open-nexus-OS
