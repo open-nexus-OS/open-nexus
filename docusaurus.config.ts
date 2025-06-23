@@ -111,15 +111,11 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/3sTZvH4PEq',
             },
             {
-              label: 'X',
+              label: 'Mastodon',
               href: 'https://x.com/docusaurus',
             },
           ],
