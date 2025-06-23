@@ -28,6 +28,14 @@ function HomepageHeader() {
             Vision
           </Link>
         </div>
+        <div className='spacer'></div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--primary button--lg"
+            to="/blog/2025_06-23-join-us">
+            Join Us!
+          </Link>
+        </div>
         <div className='hero-img'></div>
          {/* <img src="img/devices.png" alt="Devices" className='hero-img' />  */}
       </div>
