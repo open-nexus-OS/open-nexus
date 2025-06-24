@@ -32,7 +32,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/blog/2025_06-23-join-us">
+            to="/blog/join-us">
             Join Us!
           </Link>
         </div>
