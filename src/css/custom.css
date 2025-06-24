@@ -40,10 +40,10 @@
   --ifm-footer-color: rgba(0, 0, 0, 0.56);
 }
 
-.navbar {
+/* .navbar {
   background-color: rgba(250, 250, 252, 0.5);
-  backdrop-filter: blur(20px) saturate(180%);
-}
+  /* backdrop-filter: blur(20px) saturate(180%); 
+} */
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
@@ -72,7 +72,7 @@
 
 .navbar {
   background-color: rgba(255, 255, 255, .8);
-  backdrop-filter: blur(20px) saturate(180%);
+  /* backdrop-filter: blur(20px) saturate(180%); */
   box-shadow: none;
 }
 
@@ -96,6 +96,10 @@
 @media screen and (min-width: 992px) {
   .feature-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .navbar {
+    backdrop-filter: blur(20px) saturate(180%);
   }
 }
 
