@@ -73,8 +73,8 @@ export default function Community() {
           </p>
           <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
             <Link href="/docs/contributing" className="button button--secondary">Contributing</Link>
-            <Link href="/docs/development" className="button button--secondary">Development</Link>
-            <Link href="/docs/governance" className="button button--secondary">Governance</Link>
+            <Link href="/docs/category/building-blocks" className="button button--secondary">Development</Link>
+            <Link href="/docs/category/working-together" className="button button--secondary">Governance</Link>
           </div>
         </section>
 
