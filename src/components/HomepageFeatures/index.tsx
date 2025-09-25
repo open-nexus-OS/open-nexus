@@ -11,57 +11,57 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'RISC-V & Rust-Powered',
+    title: 'Rust + RRISC-V first',
     Svg: require('@site/static/img/risc-rust.svg').default,
     description: (
       <>
-        A modern microkernel operating system in <a href="https://www.rust-lang.org">Rust</a> - 
-        ptimized for <a href='https://riscv.org'>RISC-V</a> hardware.
+        Modern. secure and futureproof foundation.
       </>
     ),
   },
   {
-    title: '100% open source',
-    Svg: require('@site/static/img/foundation.svg').default,
+    title: 'Redox Microkernel Foundation',
+    Svg: require('@site/static/img/Redox_logo_2015.svg').default,
     description: (
       <>
-        Transparency right from the start: Our code is <a href='https://www.apache.org/licenses/LICENSE-2.0.html'>Apache 2.0-licensed</a> and community-driven.
+        A proven microkernel architecture with security and modularity at its core.
       </>
     ),
   },
   {
-    title: 'Real Open Source Android Alternative',
+    title: 'Real Android Alternative',
     Svg: require('@site/static/img/open-nexus.svg').default,
     description: (
       <>
-        A sovereign OS alternative to <a href='https://www.android.com'>Google/Android</a>, with a focus on privacy & control.
+        Open, privacy-focused and independent mobile OS.
       </>
     ),
   },
   {
-    title: 'Developer-First-Design',
-    Svg: require('@site/static/img/bug-slash-solid.svg').default,
+    title: 'Seamless ecosystem & modularity',
+    Svg: require('@site/static/img/device.svg').default,
     description: (
       <>
-        With clear APIs, modular architecture and upcoming bounty program for contributions
+        One OS for mobile, desktop, embedded and IoT devices.
       </>
     ),
   },
   {
-    title: 'Industry-ready & scalable',
-    Svg: require('@site/static/img/chip.svg').default,
+    title: 'Built for devlopers & users',
+    Svg: require('@site/static/img/console.svg').default,
     description: (
       <>
-        From smartphones to embedded: Our OS runs on minimal and powerful hardware.
+        Modular, hackable and open by design.
       </>
     ),
   },
   {
-    title: 'Community & Promotion',
-    Svg: require('@site/static/img/shuttle-space-solid.svg').default,
+    title: 'Open collaboration',
+    Svg: require('@site/static/img/community.svg').default,
     description: (
       <>
-        Initiatives and open source enthusiasts - be part of the mission!
+        Shape the futurewith a global community. <a href='/community'>Join us!</a>
+
       </>
     ),
   },

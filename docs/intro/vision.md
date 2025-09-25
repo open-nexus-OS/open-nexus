@@ -6,42 +6,63 @@ sidebar_position: 1
 
 ## The Next Evolution of Computing
 
-We're creating an OS where devices become **virtualized resources** in a self-organizing network. Your workflow transcends hardware - a watch extends your desktop, your EV integrates with your smart home - through open standards, not proprietary silos.
+For decades, every new device promised freedom.  
+But instead, we got **more walls**. More silos. More complexity.  
 
-## Core Problem
+We believe it’s time for something different.  
+An operating system where every device becomes part of **one seamless whole**.  
+Where your watch extends your desktop.  
+Where your car speaks the same language as your phone.  
+Where your smart home is not tied to a single brand.  
 
-Today's computing experience is fragmented across:
+Not because of proprietary clouds.  
+But because it’s **open**. Because it’s **yours**.
 
-- **Artificial device categories** (phone/desktop/watch) all on different architectures
-- **Incompatible ecosystems** requiring duplicate apps
-- **Cloud lock-in** where your "unified" experience depends on third-party servers
+---
+
+## The Core Problem
+
+Today’s digital world is broken:
+
+- **Artificial categories** — phones, desktops, watches, all living in different worlds.  
+- **Closed ecosystems** — apps rewritten, experiences duplicated.  
+- **Cloud dependence** — your so-called “unified” experience lives on someone else’s servers.  
+
+This is not innovation. It’s limitation.  
+
+---
 
 ## Why This Matters Now
 
 ### For Users
 
-- **True device interoperability** - Mix brands without compatibility issues
-- **Your data stays local** - Peer-to-peer sync replaces cloud dependence
-- **One adaptive interface** - UI scales seamlessly across form factors
+- **Freedom of choice** — mix brands, no more lock-in.  
+- **Your data stays with you** — peer-to-peer sync, no middlemen.  
+- **One adaptive interface** — from pocket to desktop, always familiar.  
 
 ### For Developers
 
-- **Write once, deploy everywhere** - with RISC-V/Rust foundation
-- **No more fragmentation** - Common APIs for all device classes
-- **Earn bounties** - for core contributions (upcoming soon)
+- **One codebase, all devices** — build once, run everywhere.  
+- **No more fragmentation** — shared APIs for every form factor.  
+- **Real rewards** — contribute and earn, not just applause.  
 
 ### For Industry
 
-**Administration of all devices** - not just Desktops. From Tablets, Smart watches to EVs. Because you can also receive company documents on all devices.
+Every device is an endpoint. Not just the desktop.  
+
+From tablets to smartwatches, from cars to IoT:  
+**one platform, one standard, one ecosystem.**
 
 | Advantage         | Impact |
 |------------------|----------------|
-| 60% lower R&D    | One codebase for all product lines |
-| Future-proof     | RISC-V architecture ensures longevity |
-| Regulatory-ready | Built-in GDPR/cybersecurity compliance |
+| 60% lower R&D    | One codebase across product lines |
+| Future-proof     | RISC-V ensures true longevity |
+| Regulatory-ready | GDPR and security built-in |
+
+---
 
 ## Whitepaper
 
-[→ Download Whitepaper (PDF english)](/files/whitepaper_en.pdf)
+[→ Download Whitepaper (PDF english)](/files/whitepaper_en.pdf)  
 
 [→ Download Whitepaper (PDF deutsch)](/files/whitepaper_de.pdf)

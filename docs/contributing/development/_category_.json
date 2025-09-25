@@ -1,8 +1,8 @@
 {
-  "label": "Development",
+  "label": "Building Blocks",
   "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Contribute Development"
+    "description": "Every great system begins with code.\nThis chapter is about the tools, the setup, and the workflow that bring Open Nexus to life.\n\nFrom the structure of our codebase to the way we build and run,\nthink of this as the map for anyone who wants to join the journey."
   }
 }

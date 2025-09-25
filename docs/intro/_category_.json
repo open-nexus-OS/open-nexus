@@ -1,8 +1,8 @@
 {
-  "label": "Introduction",
+  "label": "The Story",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "description": "Learn about the Vision of open nexus OS"
+"description": "The story of Open Nexus OS begins with a simple belief:\ncomputing should serve people, not platforms.\n\nToday, every device is a walled garden.\nYour phone, your desktop, your car — each trapped in its own ecosystem.\nWe think that’s backwards.\n\nOpen Nexus is our answer:\na unified, open operating system built in Rust, powered by a Redox microkernel,\nand designed to run everywhere — mobile, desktop, IoT, and beyond.\n\nThis chapter introduces the vision, the people we’re building it for,\nand the roadmap that will take us there."
   }
 }

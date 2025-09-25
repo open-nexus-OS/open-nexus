@@ -18,8 +18,9 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="">
-          Start with us a journey to create a Rust+Microkernel (Redox based) mobile operating system, 
-          for single device experience with distributed and virtual ressources in a common open source eco system on Risc-V architecture. 
+          
+          
+          
         </p>
         <div className={styles.buttons}>
           <Link
@@ -28,14 +29,14 @@ function HomepageHeader() {
             Vision
           </Link>
         </div>
-        <div className='spacer'></div>
+        {/*<div className='spacer'></div>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
             to="/blog/join-us">
             Join Us!
           </Link>
-        </div>
+        </div>*/}
         <div className='hero-img'></div>
          {/* <img src="img/devices.png" alt="Devices" className='hero-img' />  */}
       </div>

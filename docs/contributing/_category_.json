@@ -1,8 +1,8 @@
 {
-  "label": "Contributing",
+  "label": "Get Involved",
   "position":2,
   "link": {
     "type": "generated-index",
-    "description": "Learn how to contribute"
+    "description": "Contributing to Open Nexus is not about filling out forms or following rituals.\nIt’s about joining a story that has only just begun.\n\nEvery commit, every idea, every discussion pushes the project forward —\nfrom a proof of concept into a real operating system.\n\nThis chapter shows you how to be part of that journey."
   }
 }
