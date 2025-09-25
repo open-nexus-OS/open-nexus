@@ -87,7 +87,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/community', label: 'Community', position: 'left'},
-        {to: '/donate', label: 'Donate/Merch', position: 'left'},
+        {to: '/partners', label: 'Strategic Partners', position: 'left'},
         {
           href: 'https://github.com/open-nexus-OS',
           label: 'GitHub',
@@ -103,7 +103,7 @@ const config: Config = {
           items: [
             {
               label: 'Documentation',
-              to: '/docs/category/introduction',
+              to: '/docs/category/the-story',
             },
           ],
         },
@@ -113,10 +113,6 @@ const config: Config = {
             {
               label: 'Discord',
               href: 'https://discord.gg/3sTZvH4PEq',
-            },
-            {
-              label: 'Mastodon',
-              href: 'https://x.com/docusaurus',
             },
           ],
         },
