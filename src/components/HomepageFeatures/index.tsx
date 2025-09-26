@@ -11,7 +11,7 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Rust + RRISC-V first',
+    title: 'Rust + RISC-V first',
     Svg: require('@site/static/img/risc-rust.svg').default,
     description: (
       <>
