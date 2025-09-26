@@ -53,12 +53,6 @@ Every device is an endpoint. Not just the desktop.
 From tablets to smartwatches, from cars to IoT:  
 **one platform, one standard, one ecosystem.**
 
-| Advantage         | Impact |
-|------------------|----------------|
-| 60% lower R&D    | One codebase across product lines |
-| Future-proof     | RISC-V ensures true longevity |
-| Regulatory-ready | GDPR and security built-in |
-
 ---
 
 ## Whitepaper
