@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'neuron Microkernel Foundation',
-    Svg: require('@site/static/img/neuron_logo.svg').default,
+    Svg: require('@site/static/img/neuron-logo.svg').default,
     description: (
       <>
         A capability-based microkernel that enforces security at the architecture level, not in policy layers.
