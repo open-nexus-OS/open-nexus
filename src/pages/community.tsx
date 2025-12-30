@@ -18,7 +18,7 @@ export default function Community() {
         <section style={{ marginBottom: '2.5rem' }}>
           <h2>Why join?</h2>
           <p>
-            Open Nexus is an ambitious, open-source operating system built in Rust on a Redox microkernel.
+            Open Nexus is an ambitious, open-source operating system built in Rust on our neuron microkernel.
             The community is where ideas become designs, and designs become code. Whether you write Rust or not,
             you can help shape an open ecosystem that puts people — not platforms — first.
           </p>

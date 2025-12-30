@@ -20,11 +20,11 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Redox Microkernel Foundation',
-    Svg: require('@site/static/img/Redox_logo_2015.svg').default,
+    title: 'neuron Microkernel Foundation',
+    Svg: require('@site/static/img/neuron_logo.svg').default,
     description: (
       <>
-        A proven microkernel architecture with security and modularity at its core.
+        A capability-based microkernel that enforces security at the architecture level, not in policy layers.
       </>
     ),
   },
@@ -60,7 +60,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/community.svg').default,
     description: (
       <>
-        Shape the futurewith a global community. <a href='/community'>Join us!</a>
+        Shape the future with a global community. <a href='/community'>Join us!</a>
 
       </>
     ),

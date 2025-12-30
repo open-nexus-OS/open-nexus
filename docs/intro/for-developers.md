@@ -13,7 +13,7 @@ They carry decades of legacy code. Layers of compromises.
 And they were never meant for the world we live in today.  
 
 We get to start fresh.  
-With Rust. With RISC-V. With a Redox microkernel.  
+With Rust. With RISC-V. With our neuron microkernel.  
 A foundation that is secure by design. Modern. Open.  
 Not bound by the past – built for what’s next.  
 

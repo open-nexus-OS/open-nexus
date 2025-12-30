@@ -12,36 +12,33 @@ We’re not adding features. We’re building the layers of a new foundation.
 
 ## The Journey Ahead
 
-**1) Proof of Concept**  
-A Login and a Launcher that switches between Desktop and Mobile. Show it runs. Prove the core works.  
+**1) Kernel Foundation**
+NEURON microkernel, capability-based IPC, process isolation.
+Prove the security model works. Show services can communicate safely.
 
-**2) Core Foundation**  
-Resource management, first libraries, and the basics that make an OS more than a demo.  
-Align with open standards, not ad-hoc hacks.  
+**2) Core Services & Persistence**
+Service manager, bundle manager, policy engine, virtual filesystem, durable storage.
+The invisible foundation that makes everything else possible.
 
-**3) UI Framework**  
-A native, declarative layer for building apps. Clean APIs, modern design.  
-The system should look and feel as seamless as it runs.  
+**3) UI Foundation**
+Window manager, compositor, basic rendering, SystemUI.
+A native interface that feels fast and responsive.
 
-**4) Nexus Studio (DSL)**  
-Our developer studio: a SwiftUI/Qt-like DSL built for Rust.  
-Write once, deploy across every device.  
+**4) DSL & Developer Experience**
+Nexus DSL: a SwiftUI/Qt-like framework for Rust.
+Write once, deploy everywhere. Developer tools that make building apps simple.
 
-**5) System Modules**  
-Media, accounts, notifications, storage, networking.  
-The things users expect—delivered the open way.  
+**5) System Modules**
+Media, audio, input, display, networking, sensors, power management.
+The services users expect—delivered the open way.
 
-**6) Core Infrastructure**  
-Security framework, package manager, update system.  
-The invisible work that makes everything else reliable.  
+**6) Graphics & Performance**
+NexusGfx SDK, GPU drivers, performance monitoring.
+Not hype—just solid speed, stability, and insight.
 
-**7) Performance & Monitoring**  
-Measure, tune, optimize.  
-Not hype—just rock-solid speed, stability, and insight.  
-
-**8) Enterprise & Advanced**  
-Device management, compliance, IoT, ML.  
-For the companies who will trust this platform at scale.  
+**7) Enterprise & Advanced**
+Device management, compliance, distributed systems (DSoftBus), ML acceleration.
+For organizations that will trust this platform at scale.
 
 ---
 

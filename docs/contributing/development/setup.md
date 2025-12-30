@@ -25,16 +25,11 @@ Inside `/scripts/` you’ll find a Makefile. Three commands are all you need:
 - `make build` — compile the system  
 - `make run` — boot it in QEMU  
 
-The build flow copies our Nexus “recipes” into the Redox fork,  
-so we stay independent from Redox while still building on its kernel.  
-That keeps the architecture clean — our modules live in our repo, not theirs.  
-
 ## Current State  
 
-For now, builds target **x86**, not RISC-V.  
-Why? Because Redox on x86 is the most stable path for development today.  
-RISC-V support is coming — and it’s core to our vision —  
-but if you want to contribute now, x86 is where the action is.  
+**RISC-V is our foundation, not a future promise.**
+We test on the host for speed, then validate in QEMU for truth.
+That's how you build a real OS.
 
 ---
 

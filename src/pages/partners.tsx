@@ -33,7 +33,7 @@ export default function Partners() {
         <section style={{ marginBottom: '2.5rem' }}>
           <h2>What we offer</h2>
           <ul>
-            <li><strong>Co-building the core</strong> — Rust + Redox microkernel, RISC-V first</li>
+            <li><strong>Co-building the core</strong> — Rust + neuron microkernel, RISC-V first</li>
             <li><strong>Early access</strong> — roadmaps, SDKs, reference designs</li>
             <li><strong>Pilot programs</strong> — from prototypes to production paths</li>
             <li><strong>Compliance-first thinking</strong> — privacy, security, and auditability</li>
