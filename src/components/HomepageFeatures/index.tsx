@@ -1,6 +1,4 @@
 import type * as React from 'react';
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -15,12 +13,12 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/risc-rust.svg').default,
     description: (
       <>
-        Modern. secure and futureproof foundation.
+        Modern, secure and futureproof foundation.
       </>
     ),
   },
   {
-    title: 'neuron Microkernel Foundation',
+    title: 'neuron Microkernel',
     Svg: require('@site/static/img/neuron-logo.svg').default,
     description: (
       <>
@@ -38,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Seamless ecosystem & modularity',
+    title: 'Seamless Ecosystem',
     Svg: require('@site/static/img/device.svg').default,
     description: (
       <>
@@ -47,7 +45,7 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Built for devlopers & users',
+    title: 'Built for Developers',
     Svg: require('@site/static/img/console.svg').default,
     description: (
       <>
@@ -56,39 +54,34 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Open collaboration',
+    title: 'Open Collaboration',
     Svg: require('@site/static/img/community.svg').default,
     description: (
       <>
         Shape the future with a global community. <a href='/community'>Join us!</a>
-
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem): React.JSX.Element {
+function FeatureCard({ title, Svg, description }: FeatureItem): React.JSX.Element {
   return (
-    <div className={clsx('features')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <article className={styles.featureCard}>
+      <div className={styles.iconWrapper}>
+        <Svg className={styles.featureSvg} role="img" aria-hidden="true" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
-    </div>
+      <h3 className={styles.featureTitle}>{title}</h3>
+      <p className={styles.featureDescription}>{description}</p>
+    </article>
   );
 }
 
 export default function HomepageFeatures(): React.JSX.Element {
   return (
-    <section>
-      <div className="feature-grid">
-        {FeatureList.map((props, idx) => (
-          <Feature {...props} key={idx} />
-        ))}
-      </div>
-    </section>
+    <div className="feature-grid">
+      {FeatureList.map((props, idx) => (
+        <FeatureCard {...props} key={idx} />
+      ))}
+    </div>
   );
 }

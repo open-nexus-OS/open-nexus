@@ -1,59 +1,66 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
+import type { ReactNode } from 'react';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+function HeroSection(): ReactNode {
+  const { siteConfig } = useDocusaurusContext();
+  
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
+    <section className={styles.heroSection}>
+      <div className={styles.heroContent}>
+        <h1 className={styles.heroTitle}>
           {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className="">
-          
-          
-          
+        </h1>
+        <p className={styles.heroTagline}>
+          {siteConfig.tagline}
         </p>
-        <div className={styles.buttons}>
+        <div className={styles.heroButtons}>
           <Link
-            className="button button--secondary button--lg"
+            className={styles.primaryButton}
             to="/docs/category/the-story">
             Our Vision
           </Link>
-        </div>
-        {/*<div className='spacer'></div>
-        <div className={styles.buttons}>
           <Link
-            className="button button--primary button--lg"
-            to="/blog/join-us">
-            Join Us!
+            className={styles.secondaryButton}
+            to="/community">
+            Join the Community
           </Link>
-        </div>*/}
-        <div className='hero-img'></div>
-         {/* <img src="img/devices.png" alt="Devices" className='hero-img' />  */}
+        </div>
       </div>
-    </header>
+    </section>
   );
 }
 
+function FeaturesSection(): ReactNode {
+  return (
+    <section className={styles.featuresSection}>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>
+          Built for the future
+        </h2>
+        <p className={styles.sectionSubtitle}>
+          A complete reimagining of what an operating system can be.
+        </p>
+      </div>
+      <HomepageFeatures />
+    </section>
+  );
+}
 
 export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
+  
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Single Device experience mobile operating system <head />">
-      <HomepageHeader />
+      title={siteConfig.title}
+      description="One OS. Many Devices. Modern, secure, and open mobile operating system.">
       <main>
-        <HomepageFeatures />
+        <HeroSection />
+        <FeaturesSection />
       </main>
     </Layout>
   );
