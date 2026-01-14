@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type * as React from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  description: React.ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -67,7 +67,7 @@ const FeatureList: FeatureItem[] = [
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description}: FeatureItem): React.JSX.Element {
   return (
     <div className={clsx('features')}>
       <div className="text--center">
@@ -81,14 +81,14 @@ function Feature({title, Svg, description}: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): ReactNode {
+export default function HomepageFeatures(): React.JSX.Element {
   return (
     <section>
-        <div className="feature-grid">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+      <div className="feature-grid">
+        {FeatureList.map((props, idx) => (
+          <Feature {...props} key={idx} />
+        ))}
+      </div>
     </section>
   );
 }
