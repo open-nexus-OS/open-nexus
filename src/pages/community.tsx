@@ -1,96 +1,203 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import { MessageSquare, Code, Palette, BookOpen, Megaphone, Users, ExternalLink } from 'lucide-react';
+import styles from './community.module.css';
+
+const communityTopics = [
+  {
+    icon: MessageSquare,
+    title: 'General Discussion',
+    description: 'Ideas, feedback, and open conversations about Open Nexus',
+    link: 'https://discord.gg/3sTZvH4PEq',
+    color: '#0071e3',
+  },
+  {
+    icon: Code,
+    title: 'Development',
+    description: 'Rust, microkernel architecture, RISC-V, and core contributions',
+    link: '/docs/contributing',
+    color: '#f5a623',
+  },
+  {
+    icon: Palette,
+    title: 'Design & UX',
+    description: 'Interface design, accessibility, user experience discussions',
+    link: 'https://discord.gg/3sTZvH4PEq',
+    color: '#7856ff',
+  },
+  {
+    icon: BookOpen,
+    title: 'Documentation',
+    description: 'Help improve guides, translations, and learning resources',
+    link: '/docs/intro',
+    color: '#28a745',
+  },
+  {
+    icon: Megaphone,
+    title: 'Advocacy & Outreach',
+    description: 'Spread the word, organize events, grow the ecosystem',
+    link: 'https://discord.gg/3sTZvH4PEq',
+    color: '#ff3b30',
+  },
+  {
+    icon: Users,
+    title: 'Community Support',
+    description: 'Help newcomers, answer questions, build a welcoming space',
+    link: 'https://discord.gg/3sTZvH4PEq',
+    color: '#00c7be',
+  },
+];
 
 export default function Community() {
   return (
     <Layout title="Community">
-      <main style={{ maxWidth: 880, margin: '0 auto', padding: '3rem 1.25rem' }}>
-        {/* Hero */}
-        <header style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <h1 style={{ marginBottom: '0.5rem' }}>Join the Open Nexus Community</h1>
-          <p style={{ fontSize: '1.1rem', color: 'var(--ifm-color-emphasis-700)', margin: 0 }}>
-            One OS. Many Devices. Built in the open — and built to last.
-          </p>
-        </header>
-
-        {/* Why join */}
-        <section style={{ marginBottom: '2.5rem' }}>
-          <h2>Why join?</h2>
-          <p>
-            Open Nexus is an ambitious, open-source operating system built in Rust on our neuron microkernel.
-            The community is where ideas become designs, and designs become code. Whether you write Rust or not,
-            you can help shape an open ecosystem that puts people — not platforms — first.
-          </p>
-          <ul>
-            <li>Be part of a global movement for an open, privacy-first ecosystem</li>
-            <li>Help define the experience across mobile, desktop, and IoT</li>
-            <li>Get early access to plans, prototypes, and community events</li>
-          </ul>
-        </section>
-
-        {/* Ways to participate without coding */}
-        <section style={{ marginBottom: '2.5rem' }}>
-          <h2>Not a developer? Still essential.</h2>
-          <ul>
-            <li><strong>Testing & feedback</strong> — try builds, file issues, influence priorities</li>
-            <li><strong>Design reviews</strong> — UX/UI critique, copy, accessibility checks</li>
-            <li><strong>Docs & translations</strong> — make the project easier to use worldwide</li>
-            <li><strong>Advocacy</strong> — share the vision, invite partners, grow the ecosystem</li>
-          </ul>
-        </section>
-
-        {/* Primary CTA: Discord */}
-        <section style={{ marginBottom: '2rem' }}>
-          <h3>Join our Discord</h3>
-          <p>Serious work, friendly tone. Discord is where decisions take shape, demos happen, and new contributors get onboarded.</p>
-          <Link
-            href="https://discord.gg/3sTZvH4PEq"
-            className="button button--primary button--lg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join Discord
-          </Link>
-        </section>
-
-        {/* Secondary contact */}
-        <section style={{ marginBottom: '2.5rem' }}>
-          <h3>Prefer email?</h3>
-          <p>
-            Interested in partnerships, research, or sponsoring? Let’s talk.
-          </p>
-          <Link href="mailto:jenning@open-nexus-os.io" className="button button--secondary">
-            jenning@open-nexus-os.io
-          </Link>
-        </section>
-
-        {/* For developers: route to Contributing docs (not external GH link spam) */}
-        <section style={{ marginBottom: '2.5rem' }}>
-          <h2>Developers</h2>
-          <p>
-            Ready to build? Start with our docs: codebase overview, setup, workflow, and how to ship changes.
-          </p>
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-            <Link href="/docs/contributing" className="button button--secondary">Contributing</Link>
-            <Link href="/docs/category/building-blocks" className="button button--secondary">Development</Link>
-            <Link href="/docs/category/working-together" className="button button--secondary">Governance</Link>
+      <main className={styles.communityPage}>
+        {/* Compact Header */}
+        <section className={styles.header}>
+          <div className={styles.headerContent}>
+            <h1 className={styles.title}>Community</h1>
+            <p className={styles.subtitle}>
+              Connect, contribute, and shape the future of Open Nexus together.
+            </p>
           </div>
         </section>
 
-        {/* Community values */}
-        <section>
-          <h2>Community values</h2>
-          <ul>
-            <li><strong>Open by default</strong> — decisions and designs in the open</li>
-            <li><strong>Respect</strong> — inclusive, welcoming, and constructive</li>
-            <li><strong>Quality</strong> — steady progress over hype; ship in slices</li>
-          </ul>
+        {/* Topics Grid */}
+        <section className={styles.topicsSection}>
+          <div className={styles.container}>
+            <div className={styles.topicsGrid}>
+              {communityTopics.map((topic, idx) => {
+                const Icon = topic.icon;
+                const isExternal = topic.link.startsWith('http');
+                
+                return (
+                  <Link
+                    key={idx}
+                    to={topic.link}
+                    className={styles.topicCard}
+                    style={{ '--topic-color': topic.color } as React.CSSProperties}
+                    {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  >
+                    <div className={styles.topicIcon}>
+                      <Icon size={28} strokeWidth={1.5} />
+                    </div>
+                    <div className={styles.topicContent}>
+                      <h3 className={styles.topicTitle}>
+                        {topic.title}
+                        {isExternal && <ExternalLink size={16} className={styles.externalIcon} />}
+                      </h3>
+                      <p className={styles.topicDescription}>{topic.description}</p>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
         </section>
 
-        <footer style={{ marginTop: '3rem', fontSize: '0.9rem', color: 'var(--ifm-color-emphasis-600)' }}>
-          <p>Open Nexus is young and growing. Whether you build, test, write, or simply care — there’s a place for you here.</p>
-        </footer>
+        {/* Discord Hub */}
+        <section className={styles.discordSection}>
+          <div className={styles.container}>
+            <div className={styles.discordContent}>
+              <div className={styles.discordText}>
+                <h2 className={styles.discordTitle}>Join us on Discord</h2>
+                <p className={styles.discordDescription}>
+                  Our primary hub for real-time discussions, demos, and collaboration.
+                  Whether you're contributing code, asking questions, or just exploring — you're welcome.
+                </p>
+                <Link
+                  href="https://discord.gg/3sTZvH4PEq"
+                  className={styles.discordButton}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageSquare size={20} />
+                  Open Discord
+                </Link>
+              </div>
+              <div className={styles.discordImage}>
+                <img
+                  src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Community collaboration"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* For Developers */}
+        <section className={styles.developersSection}>
+          <div className={styles.container}>
+            <div className={styles.developersContent}>
+              <div className={styles.developersImage}>
+                <img
+                  src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Open source development"
+                  loading="lazy"
+                />
+              </div>
+              <div className={styles.developersText}>
+                <h2 className={styles.developersTitle}>For Developers</h2>
+                <p className={styles.developersDescription}>
+                  Ready to contribute code? Start with our documentation: architecture overview,
+                  build setup, contribution workflow, and how to submit your first PR.
+                </p>
+                <div className={styles.developersButtons}>
+                  <Link href="/docs/contributing" className="button button--primary button--lg">
+                    Contributing Guide
+                  </Link>
+                  <Link href="/docs/category/building-blocks" className="button button--secondary button--lg">
+                    Architecture Docs
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Community Values */}
+        <section className={styles.valuesSection}>
+          <div className={styles.container}>
+            <h2 className={styles.valuesTitle}>Community Guidelines</h2>
+            <div className={styles.valuesGrid}>
+              <div className={styles.valueCard}>
+                <h3 className={styles.valueTitle}>Open by default</h3>
+                <p className={styles.valueText}>
+                  Decisions, designs, and discussions happen in public. Transparency builds trust.
+                </p>
+              </div>
+              <div className={styles.valueCard}>
+                <h3 className={styles.valueTitle}>Respect & inclusivity</h3>
+                <p className={styles.valueText}>
+                  Welcoming environment for all backgrounds. Constructive feedback, no gatekeeping.
+                </p>
+              </div>
+              <div className={styles.valueCard}>
+                <h3 className={styles.valueTitle}>Quality over hype</h3>
+                <p className={styles.valueText}>
+                  Steady progress, real solutions. We ship in slices, not vaporware.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className={styles.contactSection}>
+          <div className={styles.container}>
+            <div className={styles.contactCard}>
+              <h3 className={styles.contactTitle}>Partnerships & Sponsorship</h3>
+              <p className={styles.contactText}>
+                Interested in strategic collaboration, research partnerships, or supporting the project?
+              </p>
+              <Link href="mailto:jenning@open-nexus-os.io" className="button button--secondary button--lg">
+                jenning@open-nexus-os.io
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

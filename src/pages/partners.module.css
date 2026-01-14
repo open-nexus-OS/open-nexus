@@ -1,0 +1,261 @@
+/**
+ * Apple-inspired Partners Page
+ */
+
+.partnersPage {
+  background: var(--apple-bg-primary);
+}
+
+/* Hero Section */
+.hero {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  background: var(--apple-bg-primary);
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(0, 113, 227, 0.08),
+    transparent
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+[data-theme='dark'] .hero::before {
+  background: radial-gradient(
+    ellipse 80% 50% at 50% -20%,
+    rgba(41, 151, 255, 0.1),
+    transparent
+  );
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--apple-text-primary);
+  margin: 0 0 1.5rem;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 500;
+  color: var(--apple-text-secondary);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Section */
+.section {
+  padding: 4rem 2rem;
+}
+
+.twoColumnSection {
+  padding: 4rem 2rem;
+  background: var(--apple-bg-secondary);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Content with Image */
+.contentWithImage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.imageWrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] .imageWrapper {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+/* Content Card */
+.contentCard {
+  background: var(--apple-bg-secondary);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  border: 1px solid var(--apple-border);
+}
+
+.twoColumnSection .contentCard {
+  background: var(--apple-bg-primary);
+}
+
+.cardTitle {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--apple-text-primary);
+  margin: 0 0 1.5rem;
+}
+
+.cardText {
+  font-size: 1.125rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+
+.cardText:last-child {
+  margin-bottom: 0;
+}
+
+/* List */
+.list {
+  font-size: 1.0625rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.8;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.list li {
+  margin-bottom: 0.75rem;
+}
+
+.list li:last-child {
+  margin-bottom: 0;
+}
+
+.list strong {
+  color: var(--apple-text-primary);
+  font-weight: 600;
+}
+
+/* Two Column Grid */
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .twoColumnGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 5rem 2rem;
+  background: var(--apple-bg-secondary);
+}
+
+.ctaCard {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2.5rem;
+  background: var(--apple-bg-primary);
+  border-radius: 24px;
+  border: 1px solid var(--apple-border);
+}
+
+.ctaText {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: 500;
+  color: var(--apple-text-primary);
+  margin: 0 0 2rem;
+  line-height: 1.4;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding: 1.125rem 2.5rem;
+  border-radius: 980px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: scale(1.04);
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.ctaHint {
+  font-size: 1rem;
+  color: var(--apple-text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .contentWithImage {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contentWithImage .imageWrapper {
+    order: 1;
+  }
+
+  .contentWithImage .contentCard {
+    order: 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 50vh;
+    padding: 4rem 1.5rem 3rem;
+  }
+
+  .section,
+  .twoColumnSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .contentCard {
+    padding: 2rem 1.5rem;
+  }
+
+  .ctaCard {
+    padding: 3rem 1.5rem;
+  }
+}

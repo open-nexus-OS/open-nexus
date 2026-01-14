@@ -1,0 +1,397 @@
+/**
+ * Apple Support Community-inspired design
+ */
+
+.communityPage {
+  background: var(--apple-bg-primary);
+}
+
+/* Compact Header */
+.header {
+  padding: 3rem 2rem 2rem;
+  background: var(--apple-bg-primary);
+  border-bottom: 1px solid var(--apple-border);
+}
+
+.headerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--apple-text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--apple-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Topics Section */
+.topicsSection {
+  padding: 3rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1rem;
+}
+
+.topicCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  background: var(--apple-bg-secondary);
+  border: 1px solid var(--apple-border);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.topicCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--topic-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.topicCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--topic-color);
+  text-decoration: none;
+}
+
+.topicCard:hover::before {
+  opacity: 1;
+}
+
+[data-theme='dark'] .topicCard:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.topicIcon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--apple-bg-primary);
+  color: var(--topic-color);
+  transition: all 0.2s ease;
+}
+
+.topicCard:hover .topicIcon {
+  background: var(--topic-color);
+  color: #fff;
+}
+
+.topicContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.topicTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--apple-text-primary);
+  margin: 0 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.externalIcon {
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+.topicDescription {
+  font-size: 0.9375rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Discord Section */
+.discordSection {
+  padding: 4rem 2rem;
+  background: var(--apple-bg-secondary);
+}
+
+.discordContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.discordText {
+  order: 1;
+}
+
+.discordTitle {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--apple-text-primary);
+  margin: 0 0 1rem;
+}
+
+.discordDescription {
+  font-size: 1.0625rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.discordButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--ifm-color-primary);
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 1.0625rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 980px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.discordButton:hover {
+  background: var(--ifm-color-primary-dark);
+  transform: scale(1.03);
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.discordImage {
+  order: 2;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] .discordImage {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.discordImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+/* Developers Section */
+.developersSection {
+  padding: 4rem 2rem;
+}
+
+.developersContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.developersImage {
+  order: 1;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] .developersImage {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.developersImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.developersText {
+  order: 2;
+}
+
+.developersTitle {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--apple-text-primary);
+  margin: 0 0 1rem;
+}
+
+.developersDescription {
+  font-size: 1.0625rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+.developersButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 4rem 2rem;
+  background: var(--apple-bg-secondary);
+}
+
+.valuesTitle {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--apple-text-primary);
+  text-align: center;
+  margin: 0 0 3rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  padding: 2rem 1.5rem;
+  background: var(--apple-bg-primary);
+  border: 1px solid var(--apple-border);
+  border-radius: 12px;
+}
+
+.valueTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--apple-text-primary);
+  margin: 0 0 0.75rem;
+}
+
+.valueText {
+  font-size: 0.9375rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 4rem 2rem;
+}
+
+.contactCard {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--apple-bg-secondary);
+  border: 1px solid var(--apple-border);
+  border-radius: 16px;
+}
+
+.contactTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--apple-text-primary);
+  margin: 0 0 1rem;
+}
+
+.contactText {
+  font-size: 1.0625rem;
+  color: var(--apple-text-secondary);
+  line-height: 1.6;
+  margin: 0 0 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .topicsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .discordContent,
+  .developersContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .discordText,
+  .developersText {
+    order: 2;
+  }
+
+  .discordImage,
+  .developersImage {
+    order: 1;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .topicsSection,
+  .discordSection,
+  .developersSection,
+  .valuesSection,
+  .contactSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .topicsGrid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .topicCard {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .developersButtons {
+    flex-direction: column;
+  }
+
+  .developersButtons .button {
+    width: 100%;
+  }
+
+  .contactCard {
+    padding: 2rem 1.5rem;
+  }
+}

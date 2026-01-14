@@ -81,6 +81,7 @@
 
 [data-theme='dark'] .featureSvg {
   color: var(--ifm-color-primary-light);
+  filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(180deg) brightness(105%);
 }
 
 .featureTitle {
