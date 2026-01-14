@@ -49,6 +49,10 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: 'Blog',
+          blogDescription: 'Project updates, architecture notes, and milestones.',
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 'ALL',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,

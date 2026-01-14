@@ -292,4 +292,99 @@ body {
   }
 }
 
+/* Blog (Apple Newsroom-ish) */
+.blog-wrapper {
+  background: var(--apple-bg-primary);
+}
+
+.blog-list-page main,
+.blog-post-page main,
+.blog-tags-list-page main,
+.blog-tags-post-list-page main,
+.blog-authors-list-page main,
+.blog-authors-posts-page main {
+  background: var(--apple-bg-primary);
+}
+
+/* Post list layout */
+.blog-list-page main .container {
+  max-width: 1100px;
+}
+
+.blog-list-page article {
+  background: var(--apple-bg-secondary);
+  border: 1px solid var(--apple-border);
+  border-radius: 24px;
+  padding: 2.25rem 2.25rem 2rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme='dark'] .blog-list-page article {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.blog-list-page article header h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.25rem);
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin-bottom: 0.5rem;
+}
+
+.blog-list-page article header h2 a {
+  color: var(--apple-text-primary);
+  text-decoration: none;
+}
+
+.blog-list-page article header h2 a:hover {
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+/* Subtitle/excerpt typography */
+.blog-list-page article p {
+  color: var(--apple-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* Tags row chips */
+.theme-blog-footer-tags-row a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--apple-border);
+  background: rgba(0, 0, 0, 0.02);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+[data-theme='dark'] .theme-blog-footer-tags-row a {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Single post page: nicer reading width + headline */
+.blog-post-page main .container {
+  max-width: 860px;
+}
+
+.blog-post-page article header h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.blog-post-page article {
+  background: transparent;
+}
+
+.blog-post-page .markdown {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
 /* Keep Docusaurus default stacking for the mobile sidebar/backdrop */

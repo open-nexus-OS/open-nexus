@@ -18,6 +18,8 @@ It is a fundamental design flaw — a brake on progress.
 
 ## The Vision: One OS. Many Devices  
 
+<!-- truncate -->
+
 **Open Nexus** is built to break these barriers.  
 A Rust-based microkernel (Redox foundation) with a modular architecture,  
 designed to adapt seamlessly from smartphones to workstations,  
@@ -28,8 +30,6 @@ Your data should not depend on third-party servers.
 Your interface should not be bound to screen size.  
 
 One system. One experience. Across an open ecosystem.  
-
-<!-- truncate -->
 
 ## What Makes This Different?  
 
