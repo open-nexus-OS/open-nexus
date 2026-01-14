@@ -30,7 +30,7 @@ const communityTopics = [
     icon: BookOpen,
     title: 'Documentation',
     description: 'Help improve guides, translations, and learning resources',
-    link: '/docs/intro',
+    link: '/docs/category/the-story',
     color: '#28a745',
   },
   {
