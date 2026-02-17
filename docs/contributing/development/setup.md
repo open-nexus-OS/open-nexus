@@ -35,4 +35,4 @@ That's how you build a real OS.
 
 In short:  
 Linux + Makefile = a working Nexus.  
-If you can build, you can contribute.
+If you can build, you can explore—and have useful conversations about the system.

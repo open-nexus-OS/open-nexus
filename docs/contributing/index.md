@@ -7,9 +7,14 @@ sidebar_position: 1
 So you’ve found us — [open-nexus-os.io](https://open-nexus-os.io).  
 That’s the front door, the story, the vision.  
 
-But the real work happens in code and in community.  
-Our main repo lives on GitHub:  
-👉 [github.com/open-nexus-OS/open-nexus-OS](https://github.com/open-nexus-OS/open-nexus-OS)  
+But before we talk about “contributing”, one important reality check:
+
+Open Nexus is **in active early development** and currently maintained by **one person**.  
+That means the project moves fast internally, but **bandwidth is limited** externally.
+
+So if you’re here to file bug reports or feature requests:  
+we can’t reliably triage or respond to those yet. Not because we don’t care—  
+but because we’d rather be honest than collect a backlog we can’t service.
 
 We use GitHub to reach developers worldwide,  
 but most modules are being migrated to our own GitLab:  
@@ -19,20 +24,33 @@ That’s where day-to-day development takes place.
 
 ---
 
-Want to dig deeper?  
+## If you’re curious (best entry points)
 
-- [Wiki](https://github.com/open-nexus-OS/open-nexus-OS/wiki) — background and guides  
-- [Discussions](https://github.com/orgs/open-nexus-OS/discussions) — join the debate  
+- [/community](/community) — Discord and community spaces (best for conversation)  
 - [/blog](/blog) — latest updates  
-- [/community](/community) — Discord and community spaces  
+- [Discussions](https://github.com/orgs/open-nexus-OS/discussions) — longer-form threads  
+- [GitHub repo](https://github.com/open-nexus-OS/open-nexus-OS) — public mirror and entry point  
+- [Wiki](https://github.com/open-nexus-OS/open-nexus-OS/wiki) — background and guides  
 
 ---
 
-This chapter is your guide to contributing:  
+## What “contributing” means right now
+
+At this stage, the most valuable contributions are **signal**, not volume:
+
+- Ask hard questions about architecture and failure modes  
+- Read along and challenge assumptions  
+- Share feedback that is specific, bounded, and testable  
+
+If you have an idea or found a problem, the best path is simple:
+start a conversation first. We’ll tell you what’s actionable right now.
+
+This chapter documents how we work when a change *is* actionable:
 
 - How the codebase is structured  
 - How to set up your dev environment  
-- How we review and accept changes  
+- How we evaluate and accept changes (with limited maintainer bandwidth)  
 - How companies can join as partners  
 
-Whether you’re here to fix a bug, build a module, or help shape the vision — welcome.  
+If this project interests you, come talk to us.  
+No pressure. No promises. Just an honest conversation about where things are—and where they’re going.  
