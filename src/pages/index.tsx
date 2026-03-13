@@ -57,7 +57,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="One OS. Many Devices. Modern, secure, and open mobile operating system.">
+      description="One OS. Many Devices. A secure, open operating system with a focused path from specialized devices to broader form factors.">
       <main>
         <HeroSection />
         <FeaturesSection />

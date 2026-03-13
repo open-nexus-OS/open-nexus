@@ -13,7 +13,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/risc-rust.svg').default,
     description: (
       <>
-        Modern, secure and futureproof foundation.
+        Modern, secure, and futureproof foundations for systems that need control, auditability, and long-term adaptability.
       </>
     ),
   },
@@ -27,20 +27,20 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Real Android Alternative',
+    title: 'Security by architecture',
     Svg: require('@site/static/img/open-nexus.svg').default,
     description: (
       <>
-        Open, privacy-focused and independent mobile OS.
+        Capability-based isolation and a low-trust design keep the trusted computing base small and explicit.
       </>
     ),
   },
   {
-    title: 'Seamless Ecosystem',
+    title: 'Focused first deployments',
     Svg: require('@site/static/img/device.svg').default,
     description: (
       <>
-        One OS for mobile, desktop, embedded and IoT devices.
+        We start where these properties matter most: industrial HMIs, kiosks, and specialized connected devices.
       </>
     ),
   },
@@ -49,7 +49,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/console.svg').default,
     description: (
       <>
-        Modular, hackable and open by design.
+        Modular, hackable, and open by design, with a long-term path toward broader device classes.
       </>
     ),
   },

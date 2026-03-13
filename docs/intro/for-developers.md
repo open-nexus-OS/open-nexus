@@ -22,6 +22,10 @@ Not a product to consume.
 But a platform to shape.  
 A platform where developers are not just users – they are co-creators.  
 
+The long-term ambition is broad.  
+The first proving grounds are narrower:
+secure, specialized devices where low TCB, explicit boundaries, and controlled deployments are not optional.
+
 ---
 
 ## Why Contribute?  
@@ -31,11 +35,11 @@ We’re building a new one.
 
 - Work at the frontier of **Rust systems programming**.  
 - Shape an OS **without legacy baggage** – everything is greenfield.  
-- See your code run **across form factors** – from smartphones to IoT to desktops.  
+- Help build foundations that can scale **from focused devices to broader form factors**.  
 - Help define **open standards** instead of being trapped in proprietary silos.  
-- Be part of a global movement to create **a real alternative to Android**.  
+- Work on an architecture designed for **industrial, kiosk, and sovereign device classes first**.  
 
-Every contribution matters. Whether it’s kernel code, UI design, documentation, testing or just shring our story.  
+Every contribution matters. Whether it’s kernel code, UI design, documentation, testing, or just sharing our story.  
 This isn’t about adding lines of code.  
 It’s about shaping the future of tech sovereignty – and beyond.  
 

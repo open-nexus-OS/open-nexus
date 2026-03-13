@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'open nexus',
   tagline: 'One OS. Many Devices.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/open-nexus.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -74,8 +74,19 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/open-nexus.svg',
+    metadata: [
+      {
+        name: 'keywords',
+        content:
+          'Open Nexus, open source operating system, RISC-V, microkernel, kiosk OS, HMI OS, industrial OS, secure device platform',
+      },
+      {
+        name: 'description',
+        content:
+          'Open Nexus is a secure, open operating system built in Rust around the NEURON microkernel, with a focused path from dedicated RISC-V devices to broader form factors.',
+      },
+    ],
     navbar: {
       title: 'open nexus',
       logo: {
@@ -130,6 +141,19 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/open-nexus-OS',
+            },
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {
+              label: 'Imprint',
+              to: '/imprint',
+            },
+            {
+              label: 'Privacy',
+              to: '/privacy',
             },
           ],
         },

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Why we need another OS: The vision of a Unified Open Ecosystem
+# Why we need another OS: the vision and the path
 
 ## The Next Evolution of Computing
 
@@ -10,9 +10,9 @@ For decades, every new device promised freedom.
 But instead, we got **more walls**. More silos. More complexity.  
 
 We believe it’s time for something different.  
-An operating system where every device becomes part of **one seamless whole**.  
-Where your watch extends your desktop.  
-Where your car speaks the same language as your phone.  
+An operating system with the ambition to make every device part of **one seamless whole**.  
+Where your watch can extend your desktop.  
+Where your car can speak the same language as your phone.  
 Where your smart home is not tied to a single brand.  
 
 Not because of proprietary clouds.  
@@ -34,6 +34,13 @@ This is not innovation. It’s limitation.
 
 ## Why This Matters Now
 
+Open Nexus has a broad long-term vision.  
+But serious systems are not built by pretending every form factor arrives at once.
+
+So our path is deliberate:
+we begin where security, auditability, controlled deployment, and hardware openness matter most.  
+That means specialized systems first — industrial HMIs, kiosks, and tightly managed device classes — while building toward broader categories over time.
+
 ### For Users
 
 - **Freedom of choice** — mix brands, no more lock-in.  
@@ -42,16 +49,19 @@ This is not innovation. It’s limitation.
 
 ### For Developers
 
-- **One codebase, all devices** — build once, run everywhere.  
-- **No more fragmentation** — shared APIs for every form factor.  
+- **One architectural direction** — shared foundations across device classes over time.  
+- **No more fragmentation** — explicit system contracts instead of ad hoc platform silos.  
 - **Real rewards** — contribute and earn, not just applause.  
 
 ### For Industry
 
-Every device is an endpoint. Not just the desktop.  
+Not every device market is the right starting point.  
 
-From tablets to smartwatches, from cars to IoT:  
-**one platform, one standard, one ecosystem.**
+We start where the architecture creates immediate value:
+secure industrial interfaces, controlled kiosks, specialized connected systems, and sovereign deployments.  
+
+The long-term goal remains ambitious:  
+**one platform, many devices, one coherent ecosystem.**
 
 ---
 

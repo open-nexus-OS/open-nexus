@@ -4,12 +4,7 @@ sidebar_position: 3
 
 # Invest in Digital Sovereignty  
 
-## The Future Starts Here  
-
-Every once in a while, a new technology comes along that changes everything.  
-The transistor. The personal computer. The smartphone.  
-
-Today, we stand at the next inflection point.  
+## A Focused Starting Point  
 
 For decades, the world has been running on platforms controlled by a handful of corporations.  
 Operating systems that lock us in. Ecosystems designed to serve their shareholders, not their users.  
@@ -17,41 +12,37 @@ Operating systems that lock us in. Ecosystems designed to serve their shareholde
 But the world is changing.  
 RISC-V is opening hardware.  
 Rust is making systems programming safe again.  
-And with Open Nexus, we have the chance to build the first truly open, unified operating system.  
+And with Open Nexus, we have the chance to build a secure open operating system with a realistic commercial entry point.  
 
-Not European. Not American. Not Asian.  
-**Global. Human. Ours.**  
+The long-term vision is broad.  
+The initial focus is disciplined:
+industrial HMIs, kiosks, managed devices, and sovereign deployments where low TCB, auditability, and hardware control matter immediately.  
 
 ---
 
 ## Why It Matters  
 
 This is not about another app.  
-Not about another product.  
-This is about building the digital foundation for the next fifty years.  
+It is about building a defensible systems foundation where security and control are business requirements, not marketing claims.  
 
-- An OS that runs across every device.  
-- An OS that puts privacy before profit.  
-- An OS that no single company can control.  
+- A capability-based system with a smaller, more explicit trusted computing base.  
+- A RISC-V-oriented platform with room for strategic hardware partnerships.  
+- A modular OS architecture that can start in specialized fleets and expand over time.  
 
 This is about sovereignty — for nations, for industries, for people.  
-A chance to reclaim computing as a **public good**, not a corporate monopoly.  
+A chance to reclaim critical computing infrastructure without starting with the riskiest possible market.  
 
 ---
 
 ## Why Join Us  
 
-We don’t want sponsors. We want pioneers.  
-Partners who believe, as we do, that the best way to predict the future is to build it.  
+We don’t want passive sponsors. We want aligned partners.  
+Partners who understand that large platform outcomes are reached through focused deployments, not vague ambition.  
 
-By investing in Open Nexus, you are not funding software.  
-You are shaping history.  
+By investing in Open Nexus, you are helping prove a secure operating model in the device classes where it can win first.  
 
-You are putting your name on the very platform that will power the next generation —  
-from cars to phones, from homes to cities.  
-
-This is bigger than any one company.  
-And it’s happening now.  
+That gives us a practical path:
+first controlled and industrial environments, then broader form factors as the architecture and ecosystem mature.  
 
 ---
 

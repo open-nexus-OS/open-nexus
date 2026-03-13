@@ -51,14 +51,16 @@ const communityTopics = [
 
 export default function Community() {
   return (
-    <Layout title="Community">
+    <Layout
+      title="Community"
+      description="Join the Open Nexus community to discuss Rust, microkernel architecture, RISC-V, documentation, and contributions to an open operating system.">
       <main className={styles.communityPage}>
         {/* Compact Header */}
         <section className={styles.header}>
           <div className={styles.headerContent}>
             <h1 className={styles.title}>Community</h1>
             <p className={styles.subtitle}>
-              Connect, contribute, and shape the future of Open Nexus together.
+              Connect, contribute, and help shape an open OS with a broad vision and a disciplined path.
             </p>
           </div>
         </section>
@@ -142,7 +144,7 @@ export default function Community() {
                 <h2 className={styles.developersTitle}>For Developers</h2>
                 <p className={styles.developersDescription}>
                   Ready to contribute code? Start with our documentation: architecture overview,
-                  build setup, contribution workflow, and how to submit your first PR.
+                  build setup, contribution workflow, and how we move from focused first deployments toward broader device classes.
                 </p>
                 <div className={styles.developersButtons}>
                   <Link href="/docs/contributing" className="button button--primary button--lg">
@@ -190,7 +192,7 @@ export default function Community() {
             <div className={styles.contactCard}>
               <h3 className={styles.contactTitle}>Partnerships & Sponsorship</h3>
               <p className={styles.contactText}>
-                Interested in strategic collaboration, research partnerships, or supporting the project?
+                Interested in strategic collaboration, research partnerships, or supporting focused real-world deployments?
               </p>
               <Link href="mailto:jenning@open-nexus-os.io" className="button button--secondary button--lg">
                 jenning@open-nexus-os.io
