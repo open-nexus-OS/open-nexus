@@ -10,3 +10,63 @@ git:
   label: Github
   permalink: https://github.com/open-nexus-OS
   description: Link to our Repositories
+
+update:
+  label: Update
+  description: Project status updates and progress reports
+
+architecture:
+  label: Architecture
+  description: System and software architecture
+
+research:
+  label: Research
+  description: Academic and technical research
+
+microkernel:
+  label: Microkernel
+  description: Microkernel design and implementation
+
+rust:
+  label: Rust
+  description: Rust programming language
+
+determinism:
+  label: Determinism
+  description: Deterministic system behavior
+
+security:
+  label: Security
+  description: Security concepts and implementation
+
+performance:
+  label: Performance
+  description: Performance analysis and optimization
+
+methodology:
+  label: Methodology
+  description: Development methodologies
+
+papers:
+  label: Papers
+  description: Academic papers and publications
+
+kernel:
+  label: Kernel
+  description: Kernel development
+
+ipc:
+  label: IPC
+  description: Inter-process communication
+
+networking:
+  label: Networking
+  description: Networking subsystem
+
+storage:
+  label: Storage
+  description: Storage subsystem
+
+tooling:
+  label: Tooling
+  description: Developer tooling and infrastructure
