@@ -197,6 +197,16 @@ export default function Community() {
               <Link href="mailto:jenning@open-nexus-os.io" className="button button--secondary button--lg">
                 jenning@open-nexus-os.io
               </Link>
+              <div className={styles.sponsorEmbed}>
+                <iframe
+                  src="https://github.com/sponsors/open-nexus-OS/button"
+                  title="Sponsor open-nexus-OS"
+                  height={32}
+                  width={114}
+                  style={{ border: 0, borderRadius: 6 }}
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
         </section>
