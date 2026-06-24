@@ -175,6 +175,36 @@
   transform: translateX(3px);
 }
 
+/* Hero product screenshot */
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 3.5rem auto 0;
+  padding: 0 2rem;
+
+  opacity: 0;
+  animation: slideUp 1s ease-out 0.8s forwards;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.3),
+    0 10px 30px -15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .heroImage {
+  box-shadow:
+    0 30px 60px -20px rgba(0, 0, 0, 0.6),
+    0 10px 30px -15px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 /* Features section wrapper */
 .featuresSection {
   background: var(--apple-bg-primary);

@@ -31,6 +31,14 @@ function HeroSection(): ReactNode {
           </Link>
         </div>
       </div>
+      <div className={styles.heroImageWrapper}>
+        <img
+          className={styles.heroImage}
+          src="/img/screenshot-onos.png"
+          alt="NEURON running on RISC-V: layered, blurred glass windows composited on the GPU"
+          loading="eager"
+        />
+      </div>
     </section>
   );
 }
