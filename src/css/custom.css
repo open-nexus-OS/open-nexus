@@ -311,12 +311,13 @@ body {
   background: var(--apple-bg-primary);
 }
 
-/* Post list layout */
-.blog-list-page main .container {
-  max-width: 1100px;
-}
+/* Blog overview cards are styled in src/theme/BlogListPage/styles.module.css
+   (Apple Newsroom-style grid). The rules below cover the single-post page,
+   tag pages and author pages. */
 
-.blog-list-page article {
+/* Tag / author list pages keep the classic card look */
+.blog-tags-post-list-page article,
+.blog-authors-posts-page article {
   background: var(--apple-bg-secondary);
   border: 1px solid var(--apple-border);
   border-radius: 24px;
@@ -325,34 +326,11 @@ body {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
 }
 
-[data-theme='dark'] .blog-list-page article {
+[data-theme='dark'] .blog-tags-post-list-page article,
+[data-theme='dark'] .blog-authors-posts-page article {
   background: rgba(255, 255, 255, 0.04);
   border-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
-}
-
-.blog-list-page article header h2 {
-  font-size: clamp(1.5rem, 3.2vw, 2.25rem);
-  letter-spacing: -0.02em;
-  line-height: 1.12;
-  margin-bottom: 0.5rem;
-}
-
-.blog-list-page article header h2 a {
-  color: var(--apple-text-primary);
-  text-decoration: none;
-}
-
-.blog-list-page article header h2 a:hover {
-  text-decoration: none;
-  opacity: 0.85;
-}
-
-/* Subtitle/excerpt typography */
-.blog-list-page article p {
-  color: var(--apple-text-secondary);
-  font-size: 1.05rem;
-  line-height: 1.65;
 }
 
 /* Tags row chips */

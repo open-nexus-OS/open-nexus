@@ -39,19 +39,26 @@ export default function BlogLayout(props: Props): ReactNode {
         </header>
       )}
 
-      <div className={clsx('container', showHero ? styles.containerTightTop : 'margin-vert--lg')}>
-        <div className="row">
-          <BlogSidebar sidebar={sidebar} />
-          <main
-            className={clsx('col', {
-              'col--7': hasSidebar,
-              'col--9 col--offset-1': !hasSidebar,
-            })}>
-            {children}
-          </main>
-          {toc && <div className="col col--2">{toc}</div>}
+      {showHero ? (
+        // List / hero pages render full-width (Apple Newsroom style), no sidebar.
+        <main className={clsx('container', styles.containerTightTop)}>
+          {children}
+        </main>
+      ) : (
+        <div className="container margin-vert--lg">
+          <div className="row">
+            <BlogSidebar sidebar={sidebar} />
+            <main
+              className={clsx('col', {
+                'col--7': hasSidebar,
+                'col--9 col--offset-1': !hasSidebar,
+              })}>
+              {children}
+            </main>
+            {toc && <div className="col col--2">{toc}</div>}
+          </div>
         </div>
-      </div>
+      )}
     </Layout>
   );
 }
