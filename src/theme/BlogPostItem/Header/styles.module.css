@@ -1,0 +1,77 @@
+/* Minimal, Apple Newsroom-style article header */
+
+.postHeader {
+  text-align: center;
+  margin: 1rem auto 2.5rem;
+  max-width: 720px;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2.25rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.07;
+  margin: 0 0 1rem;
+  color: var(--apple-text-primary);
+}
+
+.subtitle {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--apple-text-secondary);
+  margin: 0 0 1.75rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: var(--apple-text-secondary);
+}
+
+.author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorName {
+  color: var(--apple-text-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.authorName:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.metaInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.dot {
+  opacity: 0.6;
+}
