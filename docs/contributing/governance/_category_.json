@@ -1,8 +1,9 @@
 {
   "label": "Working Together",
   "position": 3,
+  "customProps": { "icon": "scale", "color": "#34c759" },
   "link": {
     "type": "generated-index",
-    "description": "How decisions get made, how contributions are reviewed, and how the license stays open.\n\nWith limited maintainer bandwidth, structure is what keeps the work coherent and lasting — not red tape."
+    "description": "How decisions are made, how changes are reviewed, and how the project stays open.\n\nStructure here exists for one reason: to keep the work coherent as it grows. Not process for its own sake."
   }
 }

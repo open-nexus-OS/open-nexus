@@ -1,5 +1,9 @@
 ---
 sidebar_position: 4
+description: "How a claim becomes something you can re-run."
+sidebar_custom_props:
+  icon: shield
+  color: "#0071e3"
 ---
 
 # How We Prove It

@@ -1,0 +1,53 @@
+.cardContainer {
+  --ifm-link-color: var(--ifm-color-emphasis-800);
+  --ifm-link-hover-color: var(--ifm-color-emphasis-700);
+  --ifm-link-hover-decoration: none;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--apple-border);
+  border-radius: var(--ifm-global-radius);
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.cardContainer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.1);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+.cardRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.iconBadge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+
+.cardBody {
+  min-width: 0;
+}
+
+.cardTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+.cardDescription {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: var(--apple-text-secondary);
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

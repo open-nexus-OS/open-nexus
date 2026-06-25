@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+description: "How a change goes from idea to merged."
+sidebar_custom_props:
+  icon: merge
+  color: "#34c759"
 ---
 
 # Contribution Workflow  

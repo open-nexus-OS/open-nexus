@@ -1,8 +1,9 @@
 {
   "label": "Development",
   "position": 2,
+  "customProps": { "icon": "terminal", "color": "#34c759" },
   "link": {
     "type": "generated-index",
-    "description": "Get a working Open Nexus on your machine.\n\nClone, build, and boot it in QEMU. For how the code is organized and how we test it, see the Architecture section."
+    "description": "Everything you need to build Open Nexus and watch it boot.\n\nClone it, build it, run it in QEMU. How the system is organized and tested lives in Architecture."
   }
 }

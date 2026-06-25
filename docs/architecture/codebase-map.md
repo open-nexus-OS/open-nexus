@@ -1,5 +1,9 @@
 ---
 sidebar_position: 5
+description: "Where everything lives in the source tree."
+sidebar_custom_props:
+  icon: folder
+  color: "#0071e3"
 ---
 
 # Codebase Map

@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+description: "The mental model — three tiers, and the one boundary that matters."
+sidebar_custom_props:
+  icon: compass
+  color: "#0071e3"
 ---
 
 # Overview

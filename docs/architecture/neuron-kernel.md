@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+description: "The microkernel we keep deliberately small."
+sidebar_custom_props:
+  icon: cpu
+  color: "#0071e3"
 ---
 
 # The NEURON Kernel
@@ -14,7 +18,7 @@ more of the system we can actually reason about.
 
 The core ABI is deliberately tiny. The minimal (os-lite) syscall set is:
 
-```
+```text
 yield   nsec    send    recv    map     vmo_create   vmo_write
 spawn   cap_transfer    as_create    as_map    exit    wait    exec
 ```

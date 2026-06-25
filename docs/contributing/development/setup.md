@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+description: "Clone, build, and boot it in QEMU."
+sidebar_custom_props:
+  icon: download
+  color: "#34c759"
 ---
 
 # Development Setup

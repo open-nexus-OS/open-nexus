@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+description: "One license, openly, for everyone."
+sidebar_custom_props:
+  icon: badge
+  color: "#34c759"
 ---
 
 # Contributor License Agreement (CLA)  

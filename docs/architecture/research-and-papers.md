@@ -1,5 +1,9 @@
 ---
 sidebar_position: 6
+description: "The published work behind the architecture."
+sidebar_custom_props:
+  icon: file
+  color: "#0071e3"
 ---
 
 # Research & Papers

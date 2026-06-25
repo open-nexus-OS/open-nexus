@@ -1,5 +1,9 @@
 ---
 sidebar_position: 2
+description: "What runs today, in QEMU, and what comes next."
+sidebar_custom_props:
+  icon: flag
+  color: "#ff9f0a"
 ---
 
 # Roadmap

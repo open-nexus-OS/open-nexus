@@ -1,8 +1,9 @@
 {
   "label": "Get Involved",
   "position": 3,
+  "customProps": { "icon": "users", "color": "#34c759" },
   "link": {
     "type": "generated-index",
-    "description": "How to take part in an early, fast-moving project — honestly.\n\nOpen Nexus is maintained by a solo developer, so the most valuable contribution right now is signal: hard questions, specific feedback, scoped fixes. This chapter covers how to set up a dev environment, how changes get reviewed, and the license."
+    "description": "There is a difference between watching a project and being early to one.\n\nOpen Nexus is built by a single maintainer, in public. The most valuable thing you can offer right now isn't volume — it's signal: a sharp question, honest scrutiny, a small fix done well. What follows is how the work happens, and how to take part."
   }
 }

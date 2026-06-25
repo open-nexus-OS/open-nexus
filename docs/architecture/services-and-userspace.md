@@ -1,5 +1,9 @@
 ---
 sidebar_position: 3
+description: "Thin daemons, safe libraries, and the line between them."
+sidebar_custom_props:
+  icon: server
+  color: "#0071e3"
 ---
 
 # Services & Userspace

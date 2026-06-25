@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+description: "What helps most right now, and how to take part."
+sidebar_custom_props:
+  icon: message
+  color: "#34c759"
 ---
 
 # Contributing  
@@ -17,8 +21,8 @@ we can’t reliably triage or respond to those yet. Not because we don’t care�
 but because we’d rather be honest than collect a backlog we can’t service.
 
 We use GitHub to reach developers worldwide,  
-but most modules are being migrated to our own GitLab:  
-👉 [gitlab.open-nexus-os.io/open-nexus-os](https://gitlab.open-nexus-os.io/open-nexus-os)  
+but most modules are being migrated to our own GitLab —
+[gitlab.open-nexus-os.io/open-nexus-os](https://gitlab.open-nexus-os.io/open-nexus-os).  
 
 That’s where day-to-day development takes place.  
 

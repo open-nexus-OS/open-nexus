@@ -1,8 +1,9 @@
 {
   "label": "For Industry",
   "position": 4,
+  "customProps": { "icon": "briefcase", "color": "#5e5ce6" },
   "link": {
     "type": "generated-index",
-    "description": "For organizations that want to go beyond sponsorship and help shape where a secure, open OS wins first.\n\nThe near-term focus is disciplined — kiosk, HMI, and other managed devices where low TCB, auditability, and hardware control are immediate advantages. The claims are backed by published papers and running code."
+    "description": "For organizations that would rather shape a foundation than wait for a product.\n\nThe near-term focus is deliberately narrow — managed devices where a small trusted base, auditability, and hardware control matter first. Every claim is backed by published work and running code."
   }
 }

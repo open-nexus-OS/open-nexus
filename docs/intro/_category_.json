@@ -1,8 +1,9 @@
 {
   "label": "The Story",
   "position": 1,
+  "customProps": { "icon": "book", "color": "#ff9f0a" },
   "link": {
     "type": "generated-index",
-    "description": "A four-gigabyte file that won't fit on a USB stick — not because the hardware can't, but because the open format isn't supported, the capable one is patented, and the universal one is from 1996.\n\nOpen Nexus is what you build when you decide that's no longer acceptable: a secure, high-performance OS on open hardware, where what a device can do is decided by its hardware and by you. Start with the vision, then see what already runs."
+    "description": "It begins with something small: a brand-new device that won't accept a file, because of a format it isn't allowed to use. Behind that is a larger idea — a secure, high-performance operating system on open hardware, where what a device can do is decided by its hardware, and by you.\n\nBegin with the vision. Then see what already runs."
   }
 }

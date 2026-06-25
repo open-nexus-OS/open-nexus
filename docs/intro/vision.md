@@ -1,5 +1,9 @@
 ---
 sidebar_position: 1
+description: "Why Open Nexus exists, and the deal it sets out to change."
+sidebar_custom_props:
+  icon: eye
+  color: "#ff9f0a"
 ---
 
 # The Vision
