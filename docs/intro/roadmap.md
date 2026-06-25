@@ -1,59 +1,77 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # Roadmap
 
-## What We’re Doing
-
-We’re not adding features. We’re building the layers of a new foundation.
-
----
-
-## The Journey Ahead
-
-**1) Kernel Foundation**
-NEURON microkernel, capability-based IPC, process isolation.
-Prove the security model works. Show services can communicate safely.
-
-**2) Core Services & Persistence**
-Service manager, bundle manager, policy engine, virtual filesystem, durable storage.
-The invisible foundation that makes everything else possible.
-
-**3) Secure Device Platform**
-Boot flow, lifecycle control, policy enforcement, update paths, and the system services needed for managed devices.
-The pieces that make controlled deployments credible.
-
-**4) First Deployments**
-Industrial HMIs, kiosks, public-sector endpoints, and specialized connected systems.
-Start where security, auditability, and hardware control are immediate differentiators.
-
-**5) UI Foundation + Developer Experience**
-Window manager, compositor, basic rendering, SystemUI, and the tooling needed to build on top.
-Create a usable platform that can expand without losing coherence.
-
-**6) System Modules**
-Media, audio, input, display, networking, sensors, power management.
-The services users expect—delivered the open way.
-
-**7) Graphics & Performance**
-NexusGfx SDK, GPU drivers, performance monitoring.
-Not hype—just solid speed, stability, and insight.
-
-**8) Broader Device Classes**
-Expand from focused deployments toward laptops, mobile, and wider ecosystems as the architecture and partner base mature.
-One OS. Many Devices. Built in the right order.
-
-**9) Enterprise & Advanced**
-Device management, compliance, distributed systems (DSoftBus), ML acceleration.
-For organizations that will trust this platform at scale.
+We're not stacking features. We're building the layers of a foundation, in order.
+Each milestone is usable on its own, and each release is testable — host-first,
+then proven in QEMU. The early layers below aren't promises; they already boot.
 
 ---
 
-## How We’ll Ship
+## Where we are now
 
-Slice by slice. Every milestone usable, every release testable.  
-From a booting kernel → to secure specialized deployments → to broader device classes.  
+It all runs in QEMU — emulated RISC-V, not yet a board on your desk. That's the
+honest scope. But it's real code you can clone and boot, not a slide deck.
 
-Not rewrites for sport. Not roadmaps on slides.  
-Just code, progress, and momentum.
+**Kernel & core services.**
+The NEURON microkernel boots with capability-based IPC, process isolation, W^X
+memory, and a 14-syscall surface — deny-by-default, enforced. On top run the core
+services: service manager, policy engine, bundle manager, virtual filesystem,
+keystore, logging. See [the architecture](/docs/category/architecture).
+
+**A UI on the GPU.**
+A full input-to-output loop driven by real interrupts — a kernel IRQ timer, and a GPU
+command ring buffer with IRQ-driven completion. Input comes back as motion with a
+fast path for the cursor; rendering runs on the GPU over virtio-gpu, accelerated with
+virgl, with opacity, blur, and shadow. Windows are real applications.
+See [We Made the Screen Light Up](/blog/we-made-the-screen-light-up).
+
+---
+
+## What's next
+
+The screen is on. Next comes a real way into the system, then the parts that make it
+a joy — first to build on, then to live in.
+
+**Login & session.**
+A real entry point — authenticated sessions built on the identity and keystore
+services.
+
+**Shell infrastructure & design primitives.**
+The foundation a desktop is assembled from: the core surfaces, components, and layout
+contracts the shell and apps will share.
+
+**The Nexus DSL.**
+Our own language for describing interfaces and how they bind to the services beneath
+them — declarative, testable, and the piece that makes Open Nexus *fun to build on*.
+
+**A new shell, written in the DSL.**
+Not hand-wired this time — assembled from the primitives and expressed in our own
+language. A shell and launcher that feel like home. The piece that makes Open Nexus
+*fun to use*.
+
+---
+
+## Further out
+
+**Secure device platform & first deployments.**
+Boot lifecycle, policy enforcement, and update paths hardened for industrial HMIs,
+kiosks, and public-sector endpoints — where security and auditability differentiate.
+
+**Broader device classes.**
+Expand from focused deployments toward laptops, mobile, and wider ecosystems as the
+architecture and partner base mature. One OS. Many Devices. In the right order.
+
+**Enterprise & advanced.**
+Device management, compliance, distributed systems (DSoftBus), ML acceleration —
+for organizations that will trust this platform at scale.
+
+---
+
+## How we ship
+
+Slice by slice. From a booting kernel → to secure specialized deployments → to
+broader device classes. Not rewrites for sport. Not roadmaps on slides. Just code,
+progress, and proof you can run yourself.

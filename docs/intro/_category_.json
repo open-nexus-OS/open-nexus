@@ -3,6 +3,6 @@
   "position": 1,
   "link": {
     "type": "generated-index",
-"description": "The story of Open Nexus OS begins with a simple belief:\ncomputing should serve people, not platforms.\n\nToday, every device is a walled garden.\nYour phone, your desktop, your car — each trapped in its own ecosystem.\nWe think that’s backwards.\n\nOpen Nexus is our answer:\na secure, open operating system built in Rust, powered by our NEURON microkernel, with a long-term ambition to span device classes.\n\nThis chapter introduces the vision, the people we’re building it for,\nand the path from focused first deployments to broader form factors."
+    "description": "A four-gigabyte file that won't fit on a USB stick — not because the hardware can't, but because the open format isn't supported, the capable one is patented, and the universal one is from 1996.\n\nOpen Nexus is what you build when you decide that's no longer acceptable: a secure, high-performance OS on open hardware, where what a device can do is decided by its hardware and by you. Start with the vision, then see what already runs."
   }
 }

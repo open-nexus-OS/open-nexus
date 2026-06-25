@@ -1,12 +1,12 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 ---
 
-# Codebase Overview
+# Codebase Map
 
-The Open Nexus OS repository is not a monolith.  
-It’s a collection of modules, organized with purpose:  
-simple to navigate, simple to extend, simple to build.  
+The OS repository is a collection of modules organized by the boundaries described
+in the [overview](/docs/architecture/overview): kernel, services, userspace. Here's
+where everything lives.
 
 ## Structure
 
@@ -34,7 +34,7 @@ simple to navigate, simple to extend, simple to build.
     - `apps/` — user applications (bundle-deployed)
     - `samgr/`, `bundlemgr/`, `nexus-ipc/`, `nexus-loader/` — core domain libraries
     - `nexus-idl-runtime/` — Cap'n Proto IDL runtime
-  - `tools/` — developer tools (IDL generators, schema validators)
+  - `tools/` — developer tools (IDL generators, schema validators, `arch-check`)
   - `tests/` — test suites (e2e, e2e_policy, remote_e2e, vfs_e2e)
   - `tasks/` — task tracking and execution plans
   - `scripts/` — build, run, test scripts (QEMU, CI)
@@ -42,35 +42,17 @@ simple to navigate, simple to extend, simple to build.
   - `recipes/` — reusable build recipes
   - `LICENSE`, `README.md`, `Makefile`, `justfile`
 
----
+## Build flow
 
-## Build Flow  
+The same source compiles three ways, fastest feedback first:
 
-**`We test on the host first, validate in QEMU second.`**
+- **Host userspace** — `nexus_env="host"`: fast, host-tested, Miri-validated.
+- **OS userspace** — `nexus_env="os"`: identical code, real syscalls.
+- **Kernel** — cross-compiled to RISC-V: minimal, capability-enforced.
 
-- **`Host userspace builds`** with nexus_env="host" — fast, testable, Miri-validated.
-- **`OS userspace builds`** with nexus_env="os" — same code, syscall stubs.
-- **`Kernel cross-compiles`** to RISC-V — minimal, capability-enforced.
-
-The workflow: just test-host → just miri-strict → just test-os.
-Fast feedback first.
-Truth validation second.
-That's how you build a real OS.
+The everyday loop is `just test-host → just miri-strict → just test-os`. How that
+proof is gated end-to-end is covered in [how we prove it](/docs/architecture/validation).
 
 ---
 
-## Why This Matters  
-
-**`This architecture gives us freedom.`**
-
-- **`Host-first testing`** means validate logic fast, validate truth in QEMU.
-- **`Userspace libraries are independent:`** safe, testable, replaceable—no kernel knowledge required.
-- **`Services stay thin:`** they're adapters, not engines. Swap the adapter, keep the logic.
-- **`Capability-based security`** is enforced at the architecture level, not bolted on.
-
-In short: we get **`the highest security`**
-without the highest complexity.
-That's what makes our architecture not just secure,
-but maintainable.
-
----
+Next: [Research & papers →](/docs/architecture/research-and-papers)

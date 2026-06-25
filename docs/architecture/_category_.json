@@ -1,8 +1,8 @@
 {
   "label": "Architecture",
-  "position":3,
+  "position": 2,
   "link": {
     "type": "generated-index",
-    "description": "Learn more about the architecture"
+    "description": "How Open Nexus actually works — and how we prove it does.\n\nA minimal RISC-V microkernel, thin service daemons over safe userspace libraries, and capability-based security enforced at the architecture level. This is a curated entry point; the canonical, line-level reference lives in the OS repository.\n\nSuggested order: Overview → The NEURON kernel → Services & userspace → How we prove it → Codebase map → Research & papers."
   }
 }

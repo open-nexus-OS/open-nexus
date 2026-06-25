@@ -150,7 +150,7 @@ export default function Community() {
                   <Link href="/docs/contributing" className="button button--primary button--lg">
                     Contributing Guide
                   </Link>
-                  <Link href="/docs/category/building-blocks" className="button button--secondary button--lg">
+                  <Link href="/docs/category/architecture" className="button button--secondary button--lg">
                     Architecture Docs
                   </Link>
                 </div>

@@ -36,21 +36,39 @@ That’s where day-to-day development takes place.
 
 ## What “contributing” means right now
 
-At this stage, the most valuable contributions are **signal**, not volume:
+Here’s the part that matters most: **at this stage, the biggest help is signal.**
 
-- Ask hard questions about architecture and failure modes  
-- Read along and challenge assumptions  
-- Share feedback that is specific, bounded, and testable  
+Code isn’t the bottleneck yet — attention and honest pressure are. The most valuable
+thing you can do costs nothing:
 
-If you have an idea or found a problem, the best path is simple:
-start a conversation first. We’ll tell you what’s actionable right now.
+- **Talk about it.** Tell someone who’d find a from-scratch, RISC-V-only OS
+  interesting. Share a blog post. A project like this grows by word of mouth long
+  before it grows by pull requests.
+- **Discuss it in the open.** Reddit, Hacker News, forums, your group chat — wherever
+  developers actually argue about systems. Public discussion is how an idea gets
+  stress-tested, and we’re listening.
+- **Ask the hard questions.** About the architecture, the failure modes, the
+  trade-offs, the claims in the papers. A sharp question is worth more than a vague
+  “looks cool.”
+- **Challenge the assumptions.** If something looks wrong, say so — specific, bounded,
+  testable. That’s the feedback that actually changes the system.
+
+None of this is a consolation prize. Talking about the project, in public, with real
+scrutiny, is genuinely one of the most useful things you can do for it today.
+
+And when we’re further along and ready for hands-on contributors, I’ll personally
+help you get set up — building, running, and finding a first piece to work on. That
+part is coming. For now, the door is open for conversation.
 
 This chapter documents how we work when a change *is* actionable:
 
-- How the codebase is structured  
-- How to set up your dev environment  
-- How we evaluate and accept changes (with limited maintainer bandwidth)  
-- How companies can join as partners  
+- How to set up your dev environment
+- How we evaluate and accept changes (with limited maintainer bandwidth)
+- How the license works
+
+For how the codebase is structured and tested, see the
+[Architecture](/docs/category/architecture) section. For companies, see
+[For Industry](/docs/category/for-industry).
 
 If this project interests you, come talk to us.  
 No pressure. No promises. Just an honest conversation about where things are—and where they’re going.  
