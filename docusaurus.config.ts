@@ -103,7 +103,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {to: '/community', label: 'Community', position: 'left'},
-        {to: '/partners', label: 'Strategic Partners', position: 'left'},
+        {to: '/partners', label: 'Partners', position: 'left'},
         {
           href: 'https://github.com/open-nexus-OS',
           label: 'GitHub',
