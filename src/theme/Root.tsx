@@ -1,4 +1,5 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
+import {useLocation} from '@docusaurus/router';
 
 const GTM_ID = 'GTM-5BQJP3N2';
 
@@ -14,6 +15,19 @@ function loadGTM() {
   script.async = true;
   script.src = `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`;
   document.head.appendChild(script);
+}
+
+function pushPageView(pathname: string, search: string, hash: string) {
+  if (typeof window === 'undefined') return;
+  if (!document.getElementById('gtm-script')) return; // GTM not loaded yet — never queue without consent
+
+  window['dataLayer'] = window['dataLayer'] || [];
+  window['dataLayer'].push({
+    event: 'page_view',
+    page_path: pathname + search + hash,
+    page_title: document.title,
+    page_location: window.location.href,
+  });
 }
 
 type RunFn = (config: import('vanilla-cookieconsent').CookieConsentConfig) => Promise<unknown>;
@@ -42,6 +56,10 @@ function resolveCookieConsentRun(mod: unknown): RunFn {
 }
 
 export default function Root({children}: {children: React.ReactNode}) {
+  const analyticsConsentRef = useRef(false);
+  const isFirstLocationRender = useRef(true);
+  const location = useLocation();
+
   useEffect(() => {
     let cancelled = false;
 
@@ -66,9 +84,15 @@ export default function Root({children}: {children: React.ReactNode}) {
           },
 
           onConsent: ({cookie}) => {
-            if (cookie.categories.includes('analytics')) {
+            const granted = cookie.categories.includes('analytics');
+            analyticsConsentRef.current = granted;
+            if (granted) {
               loadGTM();
             }
+          },
+
+          onChange: ({cookie}) => {
+            analyticsConsentRef.current = cookie.categories.includes('analytics');
           },
 
           categories: {
@@ -87,8 +111,13 @@ export default function Root({children}: {children: React.ReactNode}) {
               services: {
                 gtm: {
                   label: 'Google Tag Manager',
-                  onAccept: () => loadGTM(),
-                  onReject: () => {},
+                  onAccept: () => {
+                    analyticsConsentRef.current = true;
+                    loadGTM();
+                  },
+                  onReject: () => {
+                    analyticsConsentRef.current = false;
+                  },
                 },
               },
             },
@@ -203,6 +232,16 @@ export default function Root({children}: {children: React.ReactNode}) {
       cancelled = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (isFirstLocationRender.current) {
+      // This page load is already covered by GTM's own init/"All Pages" trigger.
+      isFirstLocationRender.current = false;
+      return;
+    }
+    if (!analyticsConsentRef.current) return;
+    pushPageView(location.pathname, location.search, location.hash);
+  }, [location.pathname, location.search, location.hash]);
 
   return (
     <>
