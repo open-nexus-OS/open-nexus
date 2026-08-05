@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import ThemedImage from '@theme/ThemedImage';
 import {Icon} from '@site/src/components/Icon';
 import styles from './partners.module.css';
 
@@ -119,8 +120,11 @@ export default function Partners() {
               </div>
               <div>
                 <div className={styles.imageWrapper}>
-                  <img
-                    src="/img/screenshot-onos.png"
+                  <ThemedImage
+                    sources={{
+                      light: '/img/desktop-light.png',
+                      dark: '/img/desktop-dark.png',
+                    }}
                     alt="Open Nexus running on RISC-V: layered, GPU-composited windows"
                     loading="lazy"
                   />

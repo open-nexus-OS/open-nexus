@@ -118,31 +118,7 @@
   font-size: 0.875rem;
 }
 
-/* Feature grid - Apple bento style */
-.feature-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1.5rem;
-    gap: 1rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .feature-grid {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
-    gap: 1rem;
-  }
-}
+/* The homepage feature bento owns its own grid — see HomepageFeatures/styles.module.css */
 
 /* Feature cards - Apple card style */
 .features {

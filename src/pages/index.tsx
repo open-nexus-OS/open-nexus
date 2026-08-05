@@ -32,12 +32,20 @@ function HeroSection(): ReactNode {
         </div>
       </div>
       <div className={styles.heroImageWrapper}>
-        <img
-          className={styles.heroImage}
-          src="/img/screenshot-onos.png"
-          alt="NEURON running on RISC-V: layered, blurred glass windows composited on the GPU"
-          loading="eager"
-        />
+        <div className={styles.heroShowcase}>
+          <img
+            className={`${styles.heroImage} ${styles.heroImageBack}`}
+            src="/img/desktop-dark.png"
+            alt="NEURON desktop in dark mode: layered, blurred glass windows composited on the GPU"
+            loading="eager"
+          />
+          <img
+            className={`${styles.heroImage} ${styles.heroImageFront}`}
+            src="/img/desktop-light.png"
+            alt="NEURON desktop in light mode with the control center open"
+            loading="eager"
+          />
+        </div>
       </div>
     </section>
   );
@@ -48,7 +56,7 @@ function FeaturesSection(): ReactNode {
     <section className={styles.featuresSection}>
       <div className={styles.sectionHeader}>
         <h2 className={styles.sectionTitle}>
-          Built for the future
+          Built for the future.
         </h2>
         <p className={styles.sectionSubtitle}>
           A complete reimagining of what an operating system can be.

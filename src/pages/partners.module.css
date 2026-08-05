@@ -110,8 +110,8 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  aspect-ratio: 4/3;
+  /* native ratio of the screenshots — cropping would cut off the control center */
+  aspect-ratio: 1282 / 830;
 }
 
 /* Content Card */

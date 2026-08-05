@@ -1,20 +1,90 @@
 /**
- * Apple-inspired Feature Cards
+ * Homepage feature bento.
+ *
+ * Follows the anatomy Apple uses on its product pages: neutral cards on a
+ * tinted section — no borders, no resting shadow — with the copy centred at the
+ * top and the artwork large underneath. The accent only shows as a soft glow
+ * behind the mark, never as a hard-edged tile.
+ *
+ * Layout is a 12-column grid: two large leads, a row of three, then a
+ * full-width closing card.
  */
 
+.bento {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .bento {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+
+  .featureCard:nth-child(1),
+  .featureCard:nth-child(2) { grid-column: span 6; }
+
+  .featureCard:nth-child(3),
+  .featureCard:nth-child(4),
+  .featureCard:nth-child(5) { grid-column: span 4; }
+
+  /* The closer runs full width, so it reads across instead of down */
+  .featureCardWide {
+    grid-column: span 12;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+  }
+
+  .featureCardWide .copy {
+    flex: 1 1 auto;
+    text-align: left;
+    max-width: 34rem;
+    margin: 0;
+    padding: 3rem 0 3rem 3.5rem;
+  }
+
+  .featureCardWide .featureTitle {
+    font-size: 1.75rem;
+  }
+
+  .featureCardWide .featureDescription {
+    font-size: 1.0625rem;
+  }
+
+  .featureCardWide .artwork {
+    flex: 0 0 38%;
+    min-height: 210px;
+    padding: 2rem;
+  }
+
+  .featureCardWide .featureSvg {
+    max-height: 118px;
+  }
+}
+
 .featureCard {
-  background: var(--apple-bg-secondary);
-  border-radius: 18px;
-  padding: 2.5rem 2rem 2rem;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1),
-              box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-  border: 1px solid var(--apple-border);
-  min-height: 320px;
-  
+  padding: 3rem 2rem 0;
+  background: #fff;
+  border-radius: 28px;
+  overflow: hidden;
+  transition:
+    transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1),
+    box-shadow 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+
   /* Stagger fade-in animation */
   opacity: 0;
   animation: cardFadeIn 0.6s ease-out forwards;
@@ -30,7 +100,7 @@
 @keyframes cardFadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
   to {
     opacity: 1;
@@ -39,58 +109,33 @@
 }
 
 .featureCard:hover {
-  transform: scale(1.02) translateY(-4px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px -24px rgba(0, 0, 0, 0.22);
 }
 
 [data-theme='dark'] .featureCard {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: var(--apple-bg-secondary);
 }
 
 [data-theme='dark'] .featureCard:hover {
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 22px 44px -24px rgba(0, 0, 0, 0.8);
 }
 
-.iconWrapper {
-  width: 120px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, rgba(0, 113, 227, 0.08), rgba(88, 86, 214, 0.08));
-  border-radius: 28px;
-  transition: transform 0.3s ease;
-}
-
-.featureCard:hover .iconWrapper {
-  transform: scale(1.05);
-}
-
-[data-theme='dark'] .iconWrapper {
-  background: linear-gradient(135deg, rgba(41, 151, 255, 0.12), rgba(100, 98, 230, 0.12));
-}
-
-.featureSvg {
-  width: 72px;
-  height: 72px;
-  color: var(--ifm-color-primary);
-}
-
-[data-theme='dark'] .featureSvg {
-  color: var(--ifm-color-primary-light);
-  filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(500%) hue-rotate(180deg) brightness(105%);
+/* Copy sits at the top, centred — the graphic carries the lower half */
+.copy {
+  flex: 0 0 auto;
+  text-align: center;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .featureTitle {
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
   color: var(--apple-text-primary);
-  margin: 0 0 0.75rem;
-  line-height: 1.3;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
 }
 
 .featureDescription {
@@ -98,35 +143,170 @@
   color: var(--apple-text-secondary);
   line-height: 1.55;
   margin: 0;
-  flex-grow: 1;
+  text-wrap: pretty;
 }
 
 .featureDescription a {
   color: var(--ifm-color-primary);
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .featureDescription a:hover {
-  opacity: 0.75;
+  opacity: 0.7;
+}
+
+/*
+ * Artwork area — absorbs the leftover height so cards in a row line up. The
+ * accent is a soft radial wash behind the mark rather than a bordered panel.
+ */
+.artwork {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  padding: 2.5rem 2rem 3rem;
+}
+
+.artwork::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 62% 68% at 50% 58%,
+    color-mix(in srgb, var(--accent) 13%, transparent),
+    transparent 78%
+  );
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+[data-theme='dark'] .artwork::before {
+  background: radial-gradient(
+    ellipse 62% 68% at 50% 58%,
+    color-mix(in srgb, var(--accent) 20%, transparent),
+    transparent 78%
+  );
+}
+
+.featureCard:hover .artwork::before {
+  transform: scale(1.08);
+}
+
+/*
+ * Screenshot cards: the shot runs to the card's side padding and is cropped by
+ * the bottom edge, the way Apple stages product imagery. No accent wash here —
+ * the image brings its own colour.
+ */
+/* runs edge to edge; the card's own radius and overflow do the clipping */
+.featureCardShot .artwork {
+  margin: 0 -2rem;
+  padding: 2.25rem 0 0;
+}
+
+.featureCardShot .artwork::before {
+  content: none;
+}
+
+.shotFrame {
+  width: 100%;
+  height: 100%;
+  min-height: 210px;
+  overflow: hidden;
+}
+
+/*
+ * cover + top alignment means the shot always fills the frame and is cropped
+ * along the card's bottom edge, whatever height the row settles on.
+ */
+.shot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/*
+ * The marks sit on canvases of different aspect ratios, so let each one scale
+ * to fill the box (preserveAspectRatio keeps it centred and undistorted)
+ * rather than rendering at its intrinsic size.
+ */
+.featureSvg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 320px;
+  max-height: 152px;
+}
+
+/*
+ * The source artwork is near-black on transparent. Inverting the lightness and
+ * rotating the hue back keeps the coloured marks (RISC-V) roughly on-hue while
+ * turning the black strokes white.
+ */
+[data-theme='dark'] .featureSvg {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/*
+ * Marks that ship with their own brand colours can't be inverted — the hues
+ * come out wrong, and the dark navy would sink into the card anyway. Flatten
+ * them to white instead, which is the usual treatment for a logo on dark.
+ * The !important is needed because the fills are inline on the paths.
+ */
+[data-theme='dark'] .featureSvgBranded {
+  filter: none;
+}
+
+[data-theme='dark'] .featureSvgBranded path {
+  fill: #f5f5f7 !important;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+  .bento {
+    padding: 0 1.5rem;
+  }
+
   .featureCard {
-    padding: 2rem 1.5rem;
-    min-height: 280px;
+    padding: 2.25rem 1.5rem 0;
+    border-radius: 22px;
   }
-  
-  .iconWrapper {
-    width: 100px;
-    height: 100px;
-    border-radius: 24px;
+
+  .artwork {
+    min-height: 168px;
+    padding: 2rem 1.5rem 2.5rem;
   }
-  
+
+  .featureCardShot .artwork {
+    margin: 0 -1.5rem;
+    padding: 1.75rem 0 0;
+  }
+
   .featureSvg {
-    width: 60px;
-    height: 60px;
+    max-height: 100px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featureCard {
+    opacity: 1;
+    animation: none;
+  }
+
+  .featureCard,
+  .artwork::before {
+    transition: none;
+  }
+
+  .featureCard:hover {
+    transform: none;
+  }
+
+  .featureCard:hover .artwork::before {
+    transform: none;
   }
 }
