@@ -7,6 +7,8 @@ tags: [update, architecture, kernel, determinism, performance]
 image: /img/20260805_ui/Desktop_light.png
 ---
 
+import VideoEmbed from '@site/src/components/VideoEmbed';
+
 In June, we ended with a promise: *the screen is on — now we teach it to think.*
 
 Our own language. A shell. A launcher that feels like home.
@@ -277,6 +279,17 @@ Today the question is whether it can carry an actual operating system — a lang
 Still RISC-V only. Still no legacy system underneath. Still built in Germany, from the kernel up, owning every layer.
 
 Next: we make it talk to other machines.
+
+## See it running
+
+Screenshots can be staged. This isn't — it's the system booting and being used on `qemu-system-riscv64`.
+
+<VideoEmbed
+  id="Vrf6Z1sAY5I"
+  title="Open Nexus OS – A Rust RISC-V-Only Microkernel Operating System"
+/>
+
+[Watch on YouTube](https://www.youtube.com/watch?v=Vrf6Z1sAY5I)
 
 [Join the discussion on Discord](https://discord.gg/3sTZvH4PEq)  
 [Contribute to the codebase](/docs/contributing)
