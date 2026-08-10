@@ -124,6 +124,18 @@ const config: Config = {
               label: 'Documentation',
               to: '/docs/category/the-story',
             },
+            {
+              label: 'RISC-V Operating System',
+              to: '/risc-v-operating-system',
+            },
+            {
+              label: 'Capability Microkernel',
+              to: '/capability-microkernel',
+            },
+            {
+              label: 'RISC-V Desktop',
+              to: '/risc-v-desktop',
+            },
           ],
         },
         {

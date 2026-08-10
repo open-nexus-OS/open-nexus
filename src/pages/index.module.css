@@ -327,3 +327,150 @@
     border-radius: 8px;
   }
 }
+
+/* ---------------------------------------------------------------------------
+ * Prose sections below the feature bento. These carry the substance search
+ * engines (and readers arriving cold) need, which the hero alone cannot.
+ * ------------------------------------------------------------------------ */
+
+.proseSection,
+.whySection,
+.exploreSection {
+  padding: 6rem 0;
+  background: var(--apple-bg-primary);
+}
+
+.whySection {
+  background: var(--apple-bg-secondary);
+}
+
+/* Shares the 1200px measure of .sectionHeader so headings and body copy sit on
+   the same left edge. */
+.proseContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.runsList {
+  margin: 0;
+  padding: 0;
+  max-width: 860px;
+}
+
+.runsItem {
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--apple-border);
+}
+
+.runsItem:last-child {
+  border-bottom: 1px solid var(--apple-border);
+}
+
+.runsTitle {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--apple-text-primary);
+  margin: 0 0 0.5rem;
+}
+
+.runsBody {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--apple-text-secondary);
+}
+
+.proseNote {
+  max-width: 860px;
+  margin: 2.5rem 0 0;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--apple-text-secondary);
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.whyTitle {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--apple-text-primary);
+  margin: 0 0 1rem;
+}
+
+.whyBody {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--apple-text-secondary);
+  margin: 0 0 1rem;
+}
+
+.whyBody code {
+  font-size: 0.9em;
+}
+
+.exploreGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.exploreCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.75rem;
+  border: 1px solid var(--apple-border);
+  border-radius: 18px;
+  background: var(--apple-bg-secondary);
+  text-decoration: none;
+  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1),
+    border-color 0.25s ease;
+}
+
+.exploreCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.exploreTitle {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--apple-text-primary);
+}
+
+.exploreBody {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--apple-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .proseSection,
+  .whySection,
+  .exploreSection {
+    padding: 4rem 0;
+  }
+
+  .proseContainer {
+    padding: 0 1.5rem;
+  }
+
+  .whyGrid,
+  .exploreGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .exploreGrid {
+    gap: 1rem;
+  }
+}

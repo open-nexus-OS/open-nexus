@@ -134,6 +134,148 @@ function FeaturesSection(): ReactNode {
   );
 }
 
+const RUNS_TODAY = [
+  {
+    title: 'A capability microkernel',
+    body: `NEURON boots with capability-based IPC, process isolation and W^X memory,
+      over a 14-syscall baseline ABI. Capabilities are task-local, rights are derived
+      by intersection and can never escalate, and anything without an explicit grant
+      is rejected at the syscall boundary.`,
+  },
+  {
+    title: 'Core services, as separate processes',
+    body: `A service manager, a policy engine, a bundle manager, a virtual filesystem,
+      a keystore and a logging authority — each its own userspace process. The kernel
+      moves handles and memory between them without ever parsing a message.`,
+  },
+  {
+    title: 'A desktop on the GPU',
+    body: `Rendering runs over virtio-gpu, accelerated with virgl, with opacity, blur
+      and shadow, driven by a full input-to-output loop on real interrupts. Dragging a
+      window is a transform, not a redraw.`,
+  },
+  {
+    title: 'Applications that are programs',
+    body: `The shell, the launcher, the greeter, Settings, the file manager and the
+      on-screen keyboard are each written in NeX — our own interface language — then
+      compiled and run as separate processes.`,
+  },
+  {
+    title: 'Text input across scripts',
+    body: `Japanese romaji→kana→kanji, Korean 2-set jamo composition and Chinese
+      pinyin, on an identity-gated input path where the kernel says who sent a
+      keystroke. Switching the system language re-renders running apps in place.`,
+  },
+];
+
+function RunsTodaySection(): ReactNode {
+  return (
+    <section className={styles.proseSection}>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>What runs today.</h2>
+        <p className={styles.sectionSubtitle}>
+          All of it boots — in QEMU, on emulated RISC-V, not yet on a board on your
+          desk. That is the honest scope, and it is real code you can clone and run.
+        </p>
+      </div>
+      <div className={styles.proseContainer}>
+        <dl className={styles.runsList}>
+          {RUNS_TODAY.map((item) => (
+            <div className={styles.runsItem} key={item.title}>
+              <dt className={styles.runsTitle}>{item.title}</dt>
+              <dd className={styles.runsBody}>{item.body}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className={styles.proseNote}>
+          What does not exist yet is worth stating just as plainly: there is no power
+          service, no audio service and no notification service. Parts of the shell in
+          our screenshots are deliberately a mockup — we go through exactly which parts
+          on the <Link to="/risc-v-desktop">RISC-V desktop page</Link>.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function WhySection(): ReactNode {
+  return (
+    <section className={styles.whySection}>
+      <div className={`${styles.proseContainer} ${styles.whyGrid}`}>
+        <article className={styles.whyColumn}>
+          <h2 className={styles.whyTitle}>Why RISC-V only</h2>
+          <p className={styles.whyBody}>
+            Most systems treat RISC-V as a port target: a third architecture added
+            after x86 and ARM, inheriting assumptions made for hardware that works
+            differently. Open Nexus starts at the other end. There is no compatibility
+            layer to preserve, so the memory model, the trap path and the boot
+            sequence are designed for the architecture rather than adapted to it.
+          </p>
+          <p className={styles.whyBody}>
+            That costs us an existing driver ecosystem. It buys something we think
+            matters more: on an open instruction set, what a device is allowed to do
+            can be decided by its hardware and its owner.
+          </p>
+        </article>
+        <article className={styles.whyColumn}>
+          <h2 className={styles.whyTitle}>Why Rust</h2>
+          <p className={styles.whyBody}>
+            In a microkernel system most code lives outside the kernel — drivers,
+            filesystems, networking and the graphics stack all run as ordinary
+            userspace processes. Rust's compile-time guarantees apply to exactly that
+            majority, and the userspace libraries holding the domain logic are marked{' '}
+            <code>#![forbid(unsafe_code)]</code>.
+          </p>
+          <p className={styles.whyBody}>
+            This is a position, not a proof. The security posture is capability-based
+            and microkernel-hard in the seL4 tradition, but we are not betting the
+            project on formal verification as a first milestone — and NEURON is not
+            formally verified.
+          </p>
+        </article>
+      </div>
+    </section>
+  );
+}
+
+function ExploreSection(): ReactNode {
+  return (
+    <section className={styles.exploreSection}>
+      <div className={styles.sectionHeader}>
+        <h2 className={styles.sectionTitle}>Start anywhere.</h2>
+      </div>
+      <div className={`${styles.proseContainer} ${styles.exploreGrid}`}>
+        <Link className={styles.exploreCard} to="/risc-v-operating-system">
+          <span className={styles.exploreTitle}>The operating system</span>
+          <span className={styles.exploreBody}>
+            How the three tiers fit together, and what we hold ourselves to.
+          </span>
+        </Link>
+        <Link className={styles.exploreCard} to="/capability-microkernel">
+          <span className={styles.exploreTitle}>The microkernel</span>
+          <span className={styles.exploreBody}>
+            Capabilities, the 14-syscall baseline, Sv39 and W^X, and the messages the
+            kernel never reads.
+          </span>
+        </Link>
+        <Link className={styles.exploreCard} to="/risc-v-desktop">
+          <span className={styles.exploreTitle}>The desktop</span>
+          <span className={styles.exploreBody}>
+            GPU-composited windows, apps written in NeX — and an honest line between
+            what is real and what is a mockup.
+          </span>
+        </Link>
+        <Link className={styles.exploreCard} to="/docs/contributing/development/setup">
+          <span className={styles.exploreTitle}>Build it yourself</span>
+          <span className={styles.exploreBody}>
+            Clone it, build it, and boot the whole system in QEMU.
+          </span>
+        </Link>
+      </div>
+    </section>
+  );
+}
+
 export default function Home(): ReactNode {
   return (
     <Layout title={PAGE_TITLE} description={PAGE_DESCRIPTION}>
@@ -148,6 +290,9 @@ export default function Home(): ReactNode {
       <main>
         <HeroSection />
         <FeaturesSection />
+        <RunsTodaySection />
+        <WhySection />
+        <ExploreSection />
       </main>
     </Layout>
   );
