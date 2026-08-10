@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
-description: "What runs today, in QEMU, and what comes next."
+title: "Roadmap 2026 — RISC-V Operating System Milestones"
+sidebar_label: "Roadmap"
+description: "What the Open Nexus RISC-V operating system runs today in QEMU, what lands next in 2026, and how the path to real RISC-V hardware is sequenced."
 sidebar_custom_props:
   icon: flag
   color: "#ff9f0a"

@@ -4,6 +4,7 @@
   "customProps": { "icon": "briefcase", "color": "#5e5ce6" },
   "link": {
     "type": "generated-index",
+    "title": "RISC-V for Industry — An Open OS for Managed Devices",
     "description": "For organizations that would rather shape a foundation than wait for a product.\n\nThe near-term focus is deliberately narrow — managed devices where a small trusted base, auditability, and hardware control matter first. Every claim is backed by published work and running code."
   }
 }

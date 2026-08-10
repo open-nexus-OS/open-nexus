@@ -4,6 +4,7 @@
   "customProps": { "icon": "book", "color": "#ff9f0a" },
   "link": {
     "type": "generated-index",
+    "title": "The Story Behind an Open Source RISC-V Operating System",
     "description": "It begins with something small: a brand-new device that won't accept a file, because of a format it isn't allowed to use. Behind that is a larger idea — a secure, high-performance operating system on open hardware, where what a device can do is decided by its hardware, and by you.\n\nBegin with the vision. Then see what already runs."
   }
 }

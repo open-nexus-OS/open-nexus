@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
-description: "The mental model — three tiers, and the one boundary that matters."
+title: "Architecture Overview — A RISC-V Microkernel OS in Rust"
+sidebar_label: "Overview"
+description: "How Open Nexus is built: a small RISC-V microkernel in Rust, thin service daemons over safe libraries, and the one security boundary that matters."
 sidebar_custom_props:
   icon: compass
   color: "#0071e3"

@@ -1,6 +1,8 @@
 ---
 sidebar_position: 5
-description: "Where everything lives in the source tree."
+title: "Codebase Map — Inside an Open Source RISC-V OS in Rust"
+sidebar_label: "Codebase Map"
+description: "Where everything lives in the Open Nexus source tree: the NEURON microkernel, the Rust userspace services, the GUI stack, and the RISC-V board support."
 sidebar_custom_props:
   icon: folder
   color: "#0071e3"

@@ -2,6 +2,7 @@
 slug: "state-of-nexus-proof-of-concept"
 title: "State of Nexus: Proof of Concept in Sight"
 subtitle: "From vision to working system — the first milestone takes shape"
+description: "Open Nexus becomes code: a modular Rust project structure on a microkernel foundation, with build and run scripts so contributors can boot it themselves."
 authors: [jenning]
 tags: [update]
 ---

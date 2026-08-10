@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
-description: "What helps most right now, and how to take part."
+title: "Contributing to an Open Source RISC-V Operating System in Rust"
+sidebar_label: "Contributing"
+description: "How to contribute to Open Nexus: what helps most right now on the NEURON microkernel, the Rust userspace services and the RISC-V GUI stack."
 sidebar_custom_props:
   icon: message
   color: "#34c759"

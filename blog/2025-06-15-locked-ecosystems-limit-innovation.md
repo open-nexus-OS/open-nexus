@@ -2,6 +2,7 @@
 slug: "breaking-ecosystem-barriers"
 title: "Breaking Ecosystem Barriers: The First Truly Unified OS"
 subtitle: "Towards a seamless single-device experience across an open ecosystem"
+description: "Why computing is fragmented by design — and the case for one open source operating system that spans phones, desktops and embedded devices instead of siloing them."
 authors: [jenning]
 tags: [vision]
 ---

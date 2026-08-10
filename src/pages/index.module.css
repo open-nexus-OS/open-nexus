@@ -67,10 +67,26 @@
   line-height: 1.05;
   color: var(--apple-text-primary);
   margin: 0 0 1rem;
-  
+
   /* Stagger animation */
   opacity: 0;
   animation: slideUp 0.8s ease-out 0.2s forwards;
+}
+
+/* The brand keeps the display size; the descriptive line below it carries the
+   words people actually search for, without leaving the h1. */
+.heroBrand {
+  display: block;
+}
+
+.heroHeadline {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: clamp(1.25rem, 3.2vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--apple-text-secondary);
 }
 
 @keyframes slideUp {

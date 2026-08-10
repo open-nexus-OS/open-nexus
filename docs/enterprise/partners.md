@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
-description: "What early involvement looks like — and what it doesn't."
+title: "Partner with Us — RISC-V Devices on an Open Source OS"
+sidebar_label: "Partner with Us"
+description: "For organizations building RISC-V devices: what early involvement in an open source, capability-based operating system looks like — and what it doesn't."
 sidebar_custom_props:
   icon: trending
   color: "#5e5ce6"

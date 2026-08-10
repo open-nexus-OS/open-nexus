@@ -2,6 +2,7 @@
 slug: "we-taught-it-to-speak"
 title: "We Taught It to Speak"
 subtitle: "Six weeks later: our own UI language, a real app runtime, and an OS that finally types back"
+description: "A RISC-V desktop that runs real apps: our own UI language, a shell, a launcher and an app runtime — every window a program, on qemu-system-riscv64."
 authors: [jenning]
 tags: [update, architecture, kernel, determinism, performance]
 image: /img/20260805_ui/Desktop_light.png

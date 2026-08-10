@@ -50,8 +50,9 @@ const config: Config = {
         },
         blog: {
           showReadingTime: true,
-          blogTitle: 'Blog',
-          blogDescription: 'Project updates, architecture notes, and milestones.',
+          blogTitle: 'Blog — Building a RISC-V Operating System in Rust',
+          blogDescription:
+            'Development updates from Open Nexus: the NEURON capability-based RISC-V microkernel, the Rust userspace, the GPU-composited desktop, and the milestones along the way.',
           blogSidebarTitle: 'Recent posts',
           blogSidebarCount: 'ALL',
           feedOptions: {
@@ -75,18 +76,20 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/open-nexus.svg',
+    // 1200x630 PNG — SVG social cards are not rendered by X, LinkedIn, Slack or Discord.
+    image: 'img/og-image.png',
     metadata: [
       {
         name: 'keywords',
         content:
-          'Open Nexus, open source operating system, RISC-V, microkernel, kiosk OS, HMI OS, industrial OS, secure device platform',
+          'RISC-V operating system, Rust operating system, RISC-V microkernel, Rust microkernel, capability-based OS, RISC-V desktop OS, RISC-V GUI, open source operating system, NEURON microkernel, Open Nexus',
       },
       {
         name: 'description',
         content:
-          'Open Nexus is a secure, open operating system built in Rust around the NEURON microkernel, with a focused path from dedicated RISC-V devices to broader form factors.',
+          'Open Nexus is an open source RISC-V operating system written in Rust, built on NEURON — a capability-based microkernel with a trusted computing base small enough to audit.',
       },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     navbar: {
       title: 'open nexus',

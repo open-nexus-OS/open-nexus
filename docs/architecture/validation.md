@@ -1,6 +1,8 @@
 ---
 sidebar_position: 4
-description: "How a claim becomes something you can re-run."
+title: "Validation & Benchmarks for the NEURON RISC-V Microkernel"
+sidebar_label: "How We Prove It"
+description: "Every performance and security claim about the NEURON RISC-V microkernel is backed by a benchmark or test you can re-run yourself in QEMU."
 sidebar_custom_props:
   icon: shield
   color: "#0071e3"

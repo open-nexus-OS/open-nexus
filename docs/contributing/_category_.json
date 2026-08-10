@@ -4,6 +4,7 @@
   "customProps": { "icon": "users", "color": "#34c759" },
   "link": {
     "type": "generated-index",
+    "title": "Get Involved in an Open Source RISC-V OS Written in Rust",
     "description": "There is a difference between watching a project and being early to one.\n\nOpen Nexus is built by a single maintainer, in public. The most valuable thing you can offer right now isn't volume — it's signal: a sharp question, honest scrutiny, a small fix done well. What follows is how the work happens, and how to take part."
   }
 }

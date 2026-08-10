@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
-description: "Why Open Nexus exists, and the deal it sets out to change."
+title: "Vision — Why We Build an Open Source RISC-V Operating System"
+sidebar_label: "The Vision"
+description: "Why Open Nexus exists: an open source operating system on open RISC-V hardware, where what a device can do is decided by its hardware and its owner."
 sidebar_custom_props:
   icon: eye
   color: "#ff9f0a"

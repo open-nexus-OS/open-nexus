@@ -1,6 +1,8 @@
 ---
 sidebar_position: 6
-description: "The published work behind the architecture."
+title: "Research & Papers on the NEURON RISC-V Microkernel"
+sidebar_label: "Research & Papers"
+description: "Published papers behind Open Nexus: capability-based microkernel design, deterministic IPC, and validation methodology for a RISC-V operating system in Rust."
 sidebar_custom_props:
   icon: file
   color: "#0071e3"

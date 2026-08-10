@@ -2,6 +2,7 @@
 slug: "we-made-the-screen-light-up"
 title: "We Made the Screen Light Up"
 subtitle: "How a from-scratch, RISC-V-only OS went from a single scanline to real apps in 90 days"
+description: "In 90 days the NEURON RISC-V microkernel went from a single pixel to a GPU-composited desktop with movable windows — no Linux underneath, no x86 crutch, RISC-V only."
 authors: [jenning]
 tags: [update, performance, architecture, microkernel, vision]
 image: /img/screenshot-onos.png

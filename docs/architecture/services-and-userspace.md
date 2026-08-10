@@ -1,6 +1,8 @@
 ---
 sidebar_position: 3
-description: "Thin daemons, safe libraries, and the line between them."
+title: "Services & Userspace — Rust Daemons on a RISC-V Microkernel"
+sidebar_label: "Services & Userspace"
+description: "How Open Nexus runs drivers, storage, networking and the GUI as thin userspace daemons in Rust, outside the RISC-V microkernel and outside the trusted computing base."
 sidebar_custom_props:
   icon: server
   color: "#0071e3"

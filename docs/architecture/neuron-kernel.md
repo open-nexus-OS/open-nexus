@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
-description: "The microkernel we keep deliberately small."
+title: "NEURON — A Capability-Based RISC-V Microkernel in Rust"
+sidebar_label: "NEURON Kernel"
+description: "NEURON is a minimal capability-based RISC-V microkernel written in Rust: a 14-syscall surface, deny-by-default capabilities, and a deliberately small trusted computing base."
 sidebar_custom_props:
   icon: cpu
   color: "#0071e3"

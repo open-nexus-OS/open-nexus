@@ -1,6 +1,8 @@
 ---
 sidebar_position: 2
-description: "Clone, build, and boot it in QEMU."
+title: "Build and Boot a RISC-V OS in Rust with QEMU"
+sidebar_label: "Development Setup"
+description: "Clone Open Nexus, install the Rust RISC-V toolchain, build the NEURON microkernel and boot the full operating system in QEMU."
 sidebar_custom_props:
   icon: download
   color: "#34c759"

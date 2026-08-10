@@ -2,6 +2,7 @@
 slug: "neuron-a-microkernel-you-can-measure"
 title: "NEURON: A Microkernel You Can Measure"
 subtitle: "A pragmatic, capability-first kernel and a service graph built for deterministic iteration"
+description: "The model, the contract surface and the numbers behind NEURON — a capability-first RISC-V microkernel in Rust built so that every change can be validated rather than hoped for."
 authors: [jenning]
 tags: [research, architecture, microkernel, rust, determinism, security, performance]
 ---

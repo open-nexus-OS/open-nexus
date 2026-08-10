@@ -2,6 +2,7 @@
 slug: "proof-over-luck"
 title: "Proof Over Luck"
 subtitle: "What changed when we stopped building an OS like a project—and started building it like a system"
+description: "Most working operating systems are merely lucky ones. How Open Nexus rebuilt its RISC-V microkernel, IPC, networking and storage around determinism instead of luck."
 authors: [jenning]
 tags: [update, architecture, kernel, ipc, networking, storage, security, tooling]
 ---

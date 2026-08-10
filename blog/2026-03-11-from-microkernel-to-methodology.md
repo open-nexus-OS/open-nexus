@@ -2,6 +2,7 @@
 slug: "from-microkernel-to-methodology"
 title: "From Microkernel to Methodology: Our Recent Papers"
 subtitle: "Why we wrote them, what they say about NEURON, and where Open Nexus is heading next"
+description: "The published paper set behind NEURON, our Rust-based capability microkernel for RISC-V — written to make the architecture explicit, citable and reviewable."
 authors: [jenning]
 tags: [research, architecture, microkernel, methodology, papers]
 ---

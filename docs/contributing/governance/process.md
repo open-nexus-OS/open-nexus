@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-description: "How a change goes from idea to merged."
+sidebar_label: "Contribution Workflow"
+description: "How a change to the Open Nexus RISC-V operating system goes from idea to merged: proposals, review, and the bar a patch has to clear."
 sidebar_custom_props:
   icon: merge
   color: "#34c759"
