@@ -1,7 +1,7 @@
 ---
 slug: "why-another-rust-microkernel-os"
 title: "Why Another Rust Microkernel OS?"
-subtitle: "I don't want to replace Linux — I want a set of trade-offs that one person can actually attempt"
+subtitle: "Solo Developing a Rust, Risc-V only, Microkernel OS with its own UI Langugage."
 description: "Why Open Nexus OS exists: a capability-based Rust microkernel for RISC-V, born from embedded driver rot, built around modularity, zero-copy IPC and deny-by-default security."
 authors: [jenning]
 tags: [vision, architecture, microkernel, rust, security]
