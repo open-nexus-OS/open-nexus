@@ -28,6 +28,19 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Mastodon rel="me" verification: proves to mastodon.social that this site
+  // and the @open_nexus_os profile belong to the same owner (green checkmark
+  // on the profile's link fields).
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'me',
+        href: 'https://mastodon.social/@open_nexus_os',
+      },
+    },
+  ],
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -144,6 +157,19 @@ const config: Config = {
             {
               label: 'Discord',
               href: 'https://discord.gg/3sTZvH4PEq',
+            },
+            {
+              label: 'X (Twitter)',
+              href: 'https://x.com/opennexusOS',
+            },
+            {
+              label: 'Mastodon',
+              href: 'https://mastodon.social/@open_nexus_os',
+              rel: 'me',
+            },
+            {
+              label: 'YouTube',
+              href: 'https://www.youtube.com/@opennexusOS',
             },
           ],
         },

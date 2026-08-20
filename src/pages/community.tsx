@@ -1,30 +1,23 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import { MessageSquare, Code, Palette, BookOpen, Megaphone, Users, ExternalLink } from 'lucide-react';
+import { MessageSquare, Code, BookOpen, Megaphone, AtSign, Youtube, ExternalLink } from 'lucide-react';
 import styles from './community.module.css';
 
 const communityTopics = [
   {
     icon: MessageSquare,
     title: 'General Discussion',
-    description: 'Ideas, feedback, and open conversations about Open Nexus',
+    description: 'Ideas, feedback, and help for newcomers — our real-time hub on Discord',
     link: 'https://discord.gg/3sTZvH4PEq',
     color: '#0071e3',
   },
   {
     icon: Code,
     title: 'Development',
-    description: 'Rust, microkernel architecture, RISC-V, and core contributions',
+    description: 'Rust, microkernel architecture, RISC-V, interface design, and core contributions',
     link: '/docs/contributing',
     color: '#f5a623',
-  },
-  {
-    icon: Palette,
-    title: 'Design & UX',
-    description: 'Interface design, accessibility, user experience discussions',
-    link: 'https://discord.gg/3sTZvH4PEq',
-    color: '#7856ff',
   },
   {
     icon: BookOpen,
@@ -35,17 +28,24 @@ const communityTopics = [
   },
   {
     icon: Megaphone,
-    title: 'Advocacy & Outreach',
-    description: 'Spread the word, organize events, grow the ecosystem',
-    link: 'https://discord.gg/3sTZvH4PEq',
-    color: '#ff3b30',
+    title: 'News & Announcements',
+    description: 'Release notes and milestones as they happen — follow @opennexusOS on X',
+    link: 'https://x.com/opennexusOS',
+    color: '#7856ff',
   },
   {
-    icon: Users,
-    title: 'Community Support',
-    description: 'Help newcomers, answer questions, build a welcoming space',
-    link: 'https://discord.gg/3sTZvH4PEq',
+    icon: AtSign,
+    title: 'Fediverse',
+    description: 'The same updates on Mastodon, for everyone who prefers the open network',
+    link: 'https://mastodon.social/@open_nexus_os',
     color: '#00c7be',
+  },
+  {
+    icon: Youtube,
+    title: 'Demos & Walkthroughs',
+    description: 'Watch the system boot, run, and evolve on real hardware',
+    link: 'https://www.youtube.com/@opennexusOS',
+    color: '#ff3b30',
   },
 ];
 
